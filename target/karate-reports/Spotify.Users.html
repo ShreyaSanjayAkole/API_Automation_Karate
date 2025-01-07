@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"f94386b9-ab37-49cf-8b49-8f8d678c388c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Spotify.Users</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">10</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-01-07 03:54:11 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:7]"><span>[1:7]</span> <span>Get Current User Profile</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:13]"><span>[2:13]</span> <span>Get User Top Items</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:19]"><span>[3:19]</span> <span>Get User Profile</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:25]"><span>[4:25]</span> <span>Follow Playlist</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:32]"><span>[5:32]</span> <span>Unfollow Playlist</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:38]"><span>[6:38]</span> <span>Get Followed Artists</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[7:44]"><span>[7:44]</span> <span>Follow Artists or Users</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[8:51]"><span>[8:51]</span> <span>Unfollow Artists or Users</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[9:58]"><span>[9:58]</span> <span>Check If User Follows Artists or Users</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[10:64]"><span>[10:64]</span> <span>Check if Current User Follows Playlist</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Spotify/Users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Spotify Users</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:7]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:7]</span>
+                <span class="scenario-name">Get Current User Profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>243</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:7]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:7]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">241</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.9">15:54:08.544 request:
+1 &gt; GET https://api.spotify.com/v1/me
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:08.783 response time in milliseconds: 239
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; etag: &quot;MC-IjVkZWJjYzhhMGEzOGE1ZjdhYjQ1ZDgyZDUzZDdlZDI3Ig==&quot;
+1 &lt; vary: Authorization
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:08 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;country&quot;:&quot;IN&quot;,&quot;display_name&quot;:&quot;Shreyaakole&quot;,&quot;email&quot;:&quot;shreyaakole143@gmail.com&quot;,&quot;explicit_content&quot;:{&quot;filter_enabled&quot;:false,&quot;filter_locked&quot;:false},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:0},&quot;href&quot;:&quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;id&quot;:&quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;images&quot;:[],&quot;product&quot;:&quot;free&quot;,&quot;type&quot;:&quot;user&quot;,&quot;uri&quot;:&quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">15:54:08.785 [print] {
+  &quot;country&quot;: &quot;IN&quot;,
+  &quot;display_name&quot;: &quot;Shreyaakole&quot;,
+  &quot;email&quot;: &quot;shreyaakole143@gmail.com&quot;,
+  &quot;explicit_content&quot;: {
+    &quot;filter_enabled&quot;: false,
+    &quot;filter_locked&quot;: false
+  },
+  &quot;external_urls&quot;: {
+    &quot;spotify&quot;: &quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+  },
+  &quot;followers&quot;: {
+    &quot;href&quot;: null,
+    &quot;total&quot;: 0
+  },
+  &quot;href&quot;: &quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;id&quot;: &quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;images&quot;: [
+  ],
+  &quot;product&quot;: &quot;free&quot;,
+  &quot;type&quot;: &quot;user&quot;,
+  &quot;uri&quot;: &quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:13]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:13]</span>
+                <span class="scenario-name">Get User Top Items</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>231</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:13]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:13]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">231</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.15">15:54:08.789 request:
+1 &gt; GET https://api.spotify.com/v1/me
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:09.019 response time in milliseconds: 229
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; etag: &quot;MC-IjVkZWJjYzhhMGEzOGE1ZjdhYjQ1ZDgyZDUzZDdlZDI3Ig==&quot;
+1 &lt; vary: Authorization
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:08 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;country&quot;:&quot;IN&quot;,&quot;display_name&quot;:&quot;Shreyaakole&quot;,&quot;email&quot;:&quot;shreyaakole143@gmail.com&quot;,&quot;explicit_content&quot;:{&quot;filter_enabled&quot;:false,&quot;filter_locked&quot;:false},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:0},&quot;href&quot;:&quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;id&quot;:&quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;images&quot;:[],&quot;product&quot;:&quot;free&quot;,&quot;type&quot;:&quot;user&quot;,&quot;uri&quot;:&quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.17">15:54:09.019 [print] {
+  &quot;country&quot;: &quot;IN&quot;,
+  &quot;display_name&quot;: &quot;Shreyaakole&quot;,
+  &quot;email&quot;: &quot;shreyaakole143@gmail.com&quot;,
+  &quot;explicit_content&quot;: {
+    &quot;filter_enabled&quot;: false,
+    &quot;filter_locked&quot;: false
+  },
+  &quot;external_urls&quot;: {
+    &quot;spotify&quot;: &quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+  },
+  &quot;followers&quot;: {
+    &quot;href&quot;: null,
+    &quot;total&quot;: 0
+  },
+  &quot;href&quot;: &quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;id&quot;: &quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;images&quot;: [
+  ],
+  &quot;product&quot;: &quot;free&quot;,
+  &quot;type&quot;: &quot;user&quot;,
+  &quot;uri&quot;: &quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:19]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:19]</span>
+                <span class="scenario-name">Get User Profile</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>238</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:19]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:19]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">237</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">15:54:09.022 request:
+1 &gt; GET https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:09.258 response time in milliseconds: 236
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=0
+1 &lt; etag: &quot;MC-Ijg5YTg0YWZhYjVkZGFhNDlmYTc1ODI0N2UzMmZjZjc1Ig==&quot;
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:09 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;display_name&quot;:&quot;Shreyaakole&quot;,&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:0},&quot;href&quot;:&quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;id&quot;:&quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,&quot;images&quot;:[],&quot;type&quot;:&quot;user&quot;,&quot;uri&quot;:&quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.23">15:54:09.259 [print] {
+  &quot;display_name&quot;: &quot;Shreyaakole&quot;,
+  &quot;external_urls&quot;: {
+    &quot;spotify&quot;: &quot;https://open.spotify.com/user/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+  },
+  &quot;followers&quot;: {
+    &quot;href&quot;: null,
+    &quot;total&quot;: 0
+  },
+  &quot;href&quot;: &quot;https://api.spotify.com/v1/users/314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;id&quot;: &quot;314jc2wmnwn5tod4ewxjiyyrkb4e&quot;,
+  &quot;images&quot;: [
+  ],
+  &quot;type&quot;: &quot;user&quot;,
+  &quot;uri&quot;: &quot;spotify:user:314jc2wmnwn5tod4ewxjiyyrkb4e&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:25]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:25]</span>
+                <span class="scenario-name">Follow Playlist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>295</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:25]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:25]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {&quot;public&quot;: false }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">294</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">15:54:09.263 request:
+1 &gt; PUT https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 16
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;public&quot;:false}
+
+15:54:09.555 response time in milliseconds: 291
+1 &lt; 200
+1 &lt; cache-control: private, max-age=0
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; Content-Length: 0
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:09 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.30">15:54:09.556 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:32]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:32]</span>
+                <span class="scenario-name">Unfollow Playlist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>292</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:32]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:32]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">291</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">15:54:09.561 request:
+1 &gt; DELETE https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:09.851 response time in milliseconds: 289
+1 &lt; 200
+1 &lt; cache-control: private, max-age=0
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; Content-Length: 0
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:10 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">15:54:09.851 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:38]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:38]</span>
+                <span class="scenario-name">Get Followed Artists</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>340</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:38]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:38]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me/following?type=artist&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">339</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">15:54:09.859 request:
+1 &gt; GET https://api.spotify.com/v1/me/following?type=artist
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:10.197 response time in milliseconds: 336
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; etag: &quot;MC-ImU4ZWI2ZTJlZjk2M2M4MmRlZjlhNmU1ZTZiYmVjMGJkIg==&quot;
+1 &lt; vary: Authorization
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:10 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;artists&quot;:{&quot;href&quot;:&quot;https://api.spotify.com/v1/me/following?type=artist&amp;limit=20&quot;,&quot;limit&quot;:20,&quot;next&quot;:null,&quot;cursors&quot;:{&quot;after&quot;:null},&quot;total&quot;:3,&quot;items&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/0oOet2f43PA68X5RxKobEy&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:27967449},&quot;genres&quot;:[&quot;filmi&quot;,&quot;modern bollywood&quot;],&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/0oOet2f43PA68X5RxKobEy&quot;,&quot;id&quot;:&quot;0oOet2f43PA68X5RxKobEy&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab6761610000e5eb59303d54ce789210e745e1a9&quot;,&quot;height&quot;:640,&quot;width&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9&quot;,&quot;height&quot;:320,&quot;width&quot;:320},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab6761610000f17859303d54ce789210e745e1a9&quot;,&quot;height&quot;:160,&quot;width&quot;:160}],&quot;name&quot;:&quot;Shreya Ghoshal&quot;,&quot;popularity&quot;:86,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:0oOet2f43PA68X5RxKobEy&quot;},{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/5yHnIri2Bj5Ysuaki6VOVy&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:937030},&quot;genres&quot;:[&quot;marathi pop&quot;],&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/5yHnIri2Bj5Ysuaki6VOVy&quot;,&quot;id&quot;:&quot;5yHnIri2Bj5Ysuaki6VOVy&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b273526847b3bb0e703de1bfbe15&quot;,&quot;height&quot;:640,&quot;width&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e02526847b3bb0e703de1bfbe15&quot;,&quot;height&quot;:300,&quot;width&quot;:300},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00004851526847b3bb0e703de1bfbe15&quot;,&quot;height&quot;:64,&quot;width&quot;:64}],&quot;name&quot;:&quot;Swapnil Bandodkar&quot;,&quot;popularity&quot;:55,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:5yHnIri2Bj5Ysuaki6VOVy&quot;},{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw&quot;},&quot;followers&quot;:{&quot;href&quot;:null,&quot;total&quot;:133558518},&quot;genres&quot;:[&quot;filmi&quot;,&quot;modern bollywood&quot;],&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/4YRxDV8wJFPHPTeXepOstw&quot;,&quot;id&quot;:&quot;4YRxDV8wJFPHPTeXepOstw&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7&quot;,&quot;height&quot;:640,&quot;width&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7&quot;,&quot;height&quot;:320,&quot;width&quot;:320},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab6761610000f1785ba2d75eb08a2d672f9b69b7&quot;,&quot;height&quot;:160,&quot;width&quot;:160}],&quot;name&quot;:&quot;Arijit Singh&quot;,&quot;popularity&quot;:92,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:4YRxDV8wJFPHPTeXepOstw&quot;}]}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.42">15:54:10.198 [print] {
+  &quot;artists&quot;: {
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/me/following?type=artist&amp;limit=20&quot;,
+    &quot;limit&quot;: 20,
+    &quot;next&quot;: null,
+    &quot;cursors&quot;: {
+      &quot;after&quot;: null
+    },
+    &quot;total&quot;: 3,
+    &quot;items&quot;: [
+      {
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/artist/0oOet2f43PA68X5RxKobEy&quot;
+        },
+        &quot;followers&quot;: {
+          &quot;href&quot;: null,
+          &quot;total&quot;: 27967449
+        },
+        &quot;genres&quot;: [
+          &quot;filmi&quot;,
+          &quot;modern bollywood&quot;
+        ],
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/0oOet2f43PA68X5RxKobEy&quot;,
+        &quot;id&quot;: &quot;0oOet2f43PA68X5RxKobEy&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb59303d54ce789210e745e1a9&quot;,
+            &quot;height&quot;: 640,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9&quot;,
+            &quot;height&quot;: 320,
+            &quot;width&quot;: 320
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f17859303d54ce789210e745e1a9&quot;,
+            &quot;height&quot;: 160,
+            &quot;width&quot;: 160
+          }
+        ],
+        &quot;name&quot;: &quot;Shreya Ghoshal&quot;,
+        &quot;popularity&quot;: 86,
+        &quot;type&quot;: &quot;artist&quot;,
+        &quot;uri&quot;: &quot;spotify:artist:0oOet2f43PA68X5RxKobEy&quot;
+      },
+      {
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/artist/5yHnIri2Bj5Ysuaki6VOVy&quot;
+        },
+        &quot;followers&quot;: {
+          &quot;href&quot;: null,
+          &quot;total&quot;: 937030
+        },
+        &quot;genres&quot;: [
+          &quot;marathi pop&quot;
+        ],
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/5yHnIri2Bj5Ysuaki6VOVy&quot;,
+        &quot;id&quot;: &quot;5yHnIri2Bj5Ysuaki6VOVy&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273526847b3bb0e703de1bfbe15&quot;,
+            &quot;height&quot;: 640,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02526847b3bb0e703de1bfbe15&quot;,
+            &quot;height&quot;: 300,
+            &quot;width&quot;: 300
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851526847b3bb0e703de1bfbe15&quot;,
+            &quot;height&quot;: 64,
+            &quot;width&quot;: 64
+          }
+        ],
+        &quot;name&quot;: &quot;Swapnil Bandodkar&quot;,
+        &quot;popularity&quot;: 55,
+        &quot;type&quot;: &quot;artist&quot;,
+        &quot;uri&quot;: &quot;spotify:artist:5yHnIri2Bj5Ysuaki6VOVy&quot;
+      },
+      {
+        &quot;external_urls&quot;: {
+          &quot;spotify&quot;: &quot;https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw&quot;
+        },
+        &quot;followers&quot;: {
+          &quot;href&quot;: null,
+          &quot;total&quot;: 133558518
+        },
+        &quot;genres&quot;: [
+          &quot;filmi&quot;,
+          &quot;modern bollywood&quot;
+        ],
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/4YRxDV8wJFPHPTeXepOstw&quot;,
+        &quot;id&quot;: &quot;4YRxDV8wJFPHPTeXepOstw&quot;,
+        &quot;images&quot;: [
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000e5eb5ba2d75eb08a2d672f9b69b7&quot;,
+            &quot;height&quot;: 640,
+            &quot;width&quot;: 640
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7&quot;,
+            &quot;height&quot;: 320,
+            &quot;width&quot;: 320
+          },
+          {
+            &quot;url&quot;: &quot;https://i.scdn.co/image/ab6761610000f1785ba2d75eb08a2d672f9b69b7&quot;,
+            &quot;height&quot;: 160,
+            &quot;width&quot;: 160
+          }
+        ],
+        &quot;name&quot;: &quot;Arijit Singh&quot;,
+        &quot;popularity&quot;: 92,
+        &quot;type&quot;: &quot;artist&quot;,
+        &quot;uri&quot;: &quot;spotify:artist:4YRxDV8wJFPHPTeXepOstw&quot;
+      }
+    ]
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[7:44]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[7:44]</span>
+                <span class="scenario-name">Follow Artists or Users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>240</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[7:44]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[7:44]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me/following?type=artist&amp;ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request {}</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method PUT</span>
+      </div>
+    </div>
+    <div class="time-cell passed">239</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">15:54:10.203 request:
+1 &gt; PUT https://api.spotify.com/v1/me/following?type=artist&amp;ids=2CIMQHirSU0MQqyYHq0eOx%2C57dN52uHvrHOxijzpIgu3E%2C1vCWHaC5f2uS3yhpwWbIA6
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 2
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{}
+
+15:54:10.439 response time in milliseconds: 235
+1 &lt; 204
+1 &lt; cache-control: private, max-age=0
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; date: Tue, 07 Jan 2025 10:24:10 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.49">15:54:10.440 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[8:51]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[8:51]</span>
+                <span class="scenario-name">Unfollow Artists or Users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>243</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[8:51]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[8:51]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me/following?type=artist&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request { &quot;ids&quot;: [&quot;2CIMQHirSU0MQqyYHq0eOx&quot;, &quot;57dN52uHvrHOxijzpIgu3E&quot;, &quot;1vCWHaC5f2uS3yhpwWbIA6&quot;] }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method DELETE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">243</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.54">15:54:10.444 request:
+1 &gt; DELETE https://api.spotify.com/v1/me/following?type=artist
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Content-Length: 84
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+{&quot;ids&quot;:[&quot;2CIMQHirSU0MQqyYHq0eOx&quot;,&quot;57dN52uHvrHOxijzpIgu3E&quot;,&quot;1vCWHaC5f2uS3yhpwWbIA6&quot;]}
+
+15:54:10.685 response time in milliseconds: 241
+1 &lt; 204
+1 &lt; cache-control: private, max-age=0
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; vary: Accept-Encoding
+1 &lt; date: Tue, 07 Jan 2025 10:24:10 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.56">15:54:10.687 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[9:58]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[9:58]</span>
+                <span class="scenario-name">Check If User Follows Artists or Users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>247</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[9:58]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[9:58]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/me/following/contains?type=artist&amp;ids=0oOet2f43PA68X5RxKobEy&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">246</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.60">15:54:10.693 request:
+1 &gt; GET https://api.spotify.com/v1/me/following/contains?type=artist&amp;ids=0oOet2f43PA68X5RxKobEy
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:10.938 response time in milliseconds: 244
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: private, max-age=0
+1 &lt; etag: &quot;MC-ImI3NTI0ZmUzZGFkZDU2NGJhOGNmMThiY2IxMjg3ZTZlIg==&quot;
+1 &lt; vary: Authorization
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:10 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+[true]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.62">15:54:10.938 [print] [
+  true
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[10:64]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[10:64]</span>
+                <span class="scenario-name">Check if Current User Follows Playlist</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>248</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[10:64]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[10:64]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Load the base URL and token from karate-config.js</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers/contains&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.66">
+      <div class="step-ref passed">66</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">247</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.66">15:54:10.943 request:
+1 &gt; GET https://api.spotify.com/v1/playlists/422ndFvhEJRdeJ86qj4FaB/followers/contains
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:11.189 response time in milliseconds: 245
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=0
+1 &lt; etag: &quot;MC-ImY5ZTU0NGY3N2I3ZWFjN2FkZDI4MWVmMjhjYTU1NTlmIg==&quot;
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:11 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+[false]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.68">15:54:11.190 [print] [
+  false
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

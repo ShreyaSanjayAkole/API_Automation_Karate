@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"f94386b9-ab37-49cf-8b49-8f8d678c388c",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Spotify.Categories</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-01-07 03:54:00 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:6]"><span>[1:6]</span> <span>Get Several Browse Categories</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:12]"><span>[2:12]</span> <span>Get Single Browse Category</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">Spotify/Categories.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Spotify Categories</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:6]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:6]</span>
+                <span class="scenario-name">Get Several Browse Categories</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>265</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:6]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:6]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/browse/categories&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">264</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">15:54:00.441 request:
+1 &gt; GET https://api.spotify.com/v1/browse/categories
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:00.704 response time in milliseconds: 262
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=0
+1 &lt; etag: &quot;MC-ImZlOTA2MDQyZTc0YzI1ZjIxMTZlMDEyMTA0MmIwNGMwIg==&quot;
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:00 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;categories&quot;:{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories?offset=0&amp;limit=20&quot;,&quot;items&quot;:[{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFC7do0jUgBzi&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFC7do0jUgBzi&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;2024 in Music&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAt0tbjZptfcdMSKl3&quot;,&quot;id&quot;:&quot;0JQ5DAt0tbjZptfcdMSKl3&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Made For You&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFz6FAsUtgAab&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFz6FAsUtgAab&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;New Releases&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHCxg5H5PtqW&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFHCxg5H5PtqW&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Hindi&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKSopHMaeIeI&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFKSopHMaeIeI&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Punjabi&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFE33XAyDiPIr&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFE33XAyDiPIr&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Tamil&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIdOwkMWR5at&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFIdOwkMWR5at&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/96b5132876eb4e818723555ce365cd87.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Telugu&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAudkNjCgYMM0TZXDw&quot;,&quot;id&quot;:&quot;0JQ5DAudkNjCgYMM0TZXDw&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://charts-images.scdn.co/spotify-charts-logos/music_charts_search_arrow_274x274.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Charts&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKtQGjXD19nw&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFKtQGjXD19nw&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Malayalam&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFB7mJpXZv2vV&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFB7mJpXZv2vV&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Bhojpuri&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFDKyRxRDLIbk&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFDKyRxRDLIbk&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/dec76a385201436281efb6796a54f479.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Happy Holidays&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLVaM30PMBm4&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFLVaM30PMBm4&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/8e508d7eb5b843a89c368c9507ecc429.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Summer&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAtOnAEpjOgUKwXyxj&quot;,&quot;id&quot;:&quot;0JQ5DAtOnAEpjOgUKwXyxj&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Discover&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEcBibYcDrCH&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFEcBibYcDrCH&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Ghazals&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFEC4WFtoNRpw&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Pop&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCWjUTdzaG0e&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFCWjUTdzaG0e&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Indie&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAUsdyVjCQuL&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFAUsdyVjCQuL&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Love&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFQIL0AXnG5AK&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFQIL0AXnG5AK&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/ac75ec857b714a118c73218bb58664e5.jpeg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Trending&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFzHmL4tf05da&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFzHmL4tf05da&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Mood&quot;},{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFA6SOHvT3gck&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFA6SOHvT3gck&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/images/7ee6530d5b3c4acc9a0957046bf11d63&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Party&quot;}],&quot;limit&quot;:20,&quot;next&quot;:&quot;https://api.spotify.com/v1/browse/categories?offset=20&amp;limit=20&quot;,&quot;offset&quot;:0,&quot;previous&quot;:null,&quot;total&quot;:68}}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">15:54:00.705 [print] {
+  &quot;categories&quot;: {
+    &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories?offset=0&amp;limit=20&quot;,
+    &quot;items&quot;: [
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFC7do0jUgBzi&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFC7do0jUgBzi&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;2024 in Music&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAt0tbjZptfcdMSKl3&quot;,
+        &quot;id&quot;: &quot;0JQ5DAt0tbjZptfcdMSKl3&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Made For You&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFz6FAsUtgAab&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFz6FAsUtgAab&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;New Releases&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFHCxg5H5PtqW&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFHCxg5H5PtqW&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/8a0fabf4d537486e9b5a4623c921f77e.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Hindi&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKSopHMaeIeI&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFKSopHMaeIeI&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/11e89d14d7844b7eb3d26619cb662a9b.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Punjabi&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFE33XAyDiPIr&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFE33XAyDiPIr&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/2117dadfdd254825b3fbc52e3652ed56.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Tamil&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFIdOwkMWR5at&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFIdOwkMWR5at&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/96b5132876eb4e818723555ce365cd87.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Telugu&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAudkNjCgYMM0TZXDw&quot;,
+        &quot;id&quot;: &quot;0JQ5DAudkNjCgYMM0TZXDw&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://charts-images.scdn.co/spotify-charts-logos/music_charts_search_arrow_274x274.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Charts&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFKtQGjXD19nw&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFKtQGjXD19nw&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Malayalam&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFB7mJpXZv2vV&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFB7mJpXZv2vV&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Bhojpuri&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFDKyRxRDLIbk&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFDKyRxRDLIbk&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/dec76a385201436281efb6796a54f479.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Happy Holidays&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFLVaM30PMBm4&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFLVaM30PMBm4&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/8e508d7eb5b843a89c368c9507ecc429.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Summer&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAtOnAEpjOgUKwXyxj&quot;,
+        &quot;id&quot;: &quot;0JQ5DAtOnAEpjOgUKwXyxj&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Discover&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEcBibYcDrCH&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFEcBibYcDrCH&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/728ed47fc1674feb95f7ac20236eb6d7.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Ghazals&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFEC4WFtoNRpw&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFEC4WFtoNRpw&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/media/derived/pop-274x274_447148649685019f5e2a03a39e78ba52_0_0_274_274.jpg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Pop&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFCWjUTdzaG0e&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFCWjUTdzaG0e&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/fe06caf056474bc58862591cd60b57fc.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Indie&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFAUsdyVjCQuL&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFAUsdyVjCQuL&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/media/derived/romance-274x274_8100794c94847b6d27858bed6fa4d91b_0_0_274_274.jpg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Love&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFQIL0AXnG5AK&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFQIL0AXnG5AK&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/ac75ec857b714a118c73218bb58664e5.jpeg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Trending&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFzHmL4tf05da&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFzHmL4tf05da&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/media/original/mood-274x274_976986a31ac8c49794cbdc7246fd5ad7_274x274.jpg&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Mood&quot;
+      },
+      {
+        &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFA6SOHvT3gck&quot;,
+        &quot;id&quot;: &quot;0JQ5DAqbMKFA6SOHvT3gck&quot;,
+        &quot;icons&quot;: [
+          {
+            &quot;height&quot;: 274,
+            &quot;url&quot;: &quot;https://t.scdn.co/images/7ee6530d5b3c4acc9a0957046bf11d63&quot;,
+            &quot;width&quot;: 274
+          }
+        ],
+        &quot;name&quot;: &quot;Party&quot;
+      }
+    ],
+    &quot;limit&quot;: 20,
+    &quot;next&quot;: &quot;https://api.spotify.com/v1/browse/categories?offset=20&amp;limit=20&quot;,
+    &quot;offset&quot;: 0,
+    &quot;previous&quot;: null,
+    &quot;total&quot;: 68
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:12]</span>
+                <span class="scenario-name">Get Single Browse Category</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>233</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + tokenID</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;https://api.spotify.com/v1/browse/categories/dinner&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">232</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">15:54:00.709 request:
+1 &gt; GET https://api.spotify.com/v1/browse/categories/dinner
+1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Host: api.spotify.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+15:54:00.940 response time in milliseconds: 230
+1 &lt; 200
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; cache-control: public, max-age=0
+1 &lt; etag: &quot;MC-IjFmYjc0NTczYmI5OWJkNDFiMWU1YmZmY2E2MTIwYzMyIg==&quot;
+1 &lt; x-robots-tag: noindex, nofollow
+1 &lt; access-control-allow-origin: *
+1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
+1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
+1 &lt; access-control-allow-credentials: true
+1 &lt; access-control-max-age: 604800
+1 &lt; strict-transport-security: max-age=31536000
+1 &lt; x-content-type-options: nosniff
+1 &lt; date: Tue, 07 Jan 2025 10:24:00 GMT
+1 &lt; server: envoy
+1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
+1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+1 &lt; Transfer-Encoding: chunked
+{&quot;href&quot;:&quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFRY5ok2pxXJ0&quot;,&quot;id&quot;:&quot;0JQ5DAqbMKFRY5ok2pxXJ0&quot;,&quot;icons&quot;:[{&quot;height&quot;:274,&quot;url&quot;:&quot;https://t.scdn.co/media/original/dinner_1b6506abba0ba52c54e6d695c8571078_274x274.jpg&quot;,&quot;width&quot;:274}],&quot;name&quot;:&quot;Cooking &amp; Dining&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.16">15:54:00.941 [print] {
+  &quot;href&quot;: &quot;https://api.spotify.com/v1/browse/categories/0JQ5DAqbMKFRY5ok2pxXJ0&quot;,
+  &quot;id&quot;: &quot;0JQ5DAqbMKFRY5ok2pxXJ0&quot;,
+  &quot;icons&quot;: [
+    {
+      &quot;height&quot;: 274,
+      &quot;url&quot;: &quot;https://t.scdn.co/media/original/dinner_1b6506abba0ba52c54e6d695c8571078_274x274.jpg&quot;,
+      &quot;width&quot;: 274
+    }
+  ],
+  &quot;name&quot;: &quot;Cooking &amp; Dining&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
