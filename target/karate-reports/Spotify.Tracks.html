@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">6</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">6</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,27 +49,27 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-01-07 03:54:08 pm</div>
+    <div>2025-01-08 07:37:45 am</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Get Track</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[2:12]"><span>[2:12]</span> <span>Get Several Tracks</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[3:18]"><span>[3:18]</span> <span>Get User Saved Tracks</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[4:24]"><span>[4:24]</span> <span>Save Tracks for Current User</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[5:31]"><span>[5:31]</span> <span>Remove User Saved Tracks</span></a>
           </div>
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[6:37]"><span>[6:37]</span> <span>Check User Saved Tracks</span></a>
           </div>
         </div>
@@ -95,8 +95,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>247</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>300</span>
             </div>
           </div>
           <div class="step-row">
@@ -175,7 +175,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">245</div>
+    <div class="time-cell passed">300</div>
   </div>
 
    
@@ -184,34 +184,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">15:54:06.944 request:
+  <div class="preformatted" data-parent="0.8">07:37:43.329 request:
 1 &gt; GET https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:07.188 response time in milliseconds: 243
-1 &lt; 200
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; cache-control: public, max-age=0
-1 &lt; etag: &quot;MC-ImQwOWVkOWYwZWMyMzAxMzRmMzQxZDRlODI3OWY4NmQxIg==&quot;
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:43.628 response time in milliseconds: 298
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:07 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:45 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-{&quot;album&quot;:{&quot;album_type&quot;:&quot;single&quot;,&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/6sFIWsNpZYqfjUpaCgueju&quot;,&quot;id&quot;:&quot;6sFIWsNpZYqfjUpaCgueju&quot;,&quot;name&quot;:&quot;Carly Rae Jepsen&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:6sFIWsNpZYqfjUpaCgueju&quot;}],&quot;available_markets&quot;:[],&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/album/0tGPJ0bkWOUmH7MEOR77qc&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc&quot;,&quot;id&quot;:&quot;0tGPJ0bkWOUmH7MEOR77qc&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b2737359994525d219f64872d3b1&quot;,&quot;width&quot;:640,&quot;height&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e027359994525d219f64872d3b1&quot;,&quot;width&quot;:300,&quot;height&quot;:300},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d000048517359994525d219f64872d3b1&quot;,&quot;width&quot;:64,&quot;height&quot;:64}],&quot;name&quot;:&quot;Cut To The Feeling&quot;,&quot;release_date&quot;:&quot;2017-05-26&quot;,&quot;release_date_precision&quot;:&quot;day&quot;,&quot;total_tracks&quot;:1,&quot;type&quot;:&quot;album&quot;,&quot;uri&quot;:&quot;spotify:album:0tGPJ0bkWOUmH7MEOR77qc&quot;},&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/6sFIWsNpZYqfjUpaCgueju&quot;,&quot;id&quot;:&quot;6sFIWsNpZYqfjUpaCgueju&quot;,&quot;name&quot;:&quot;Carly Rae Jepsen&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:6sFIWsNpZYqfjUpaCgueju&quot;}],&quot;available_markets&quot;:[],&quot;disc_number&quot;:1,&quot;duration_ms&quot;:207959,&quot;explicit&quot;:false,&quot;external_ids&quot;:{&quot;isrc&quot;:&quot;USUM71703861&quot;},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/track/11dFghVXANMlKmJXsNCbNl&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl&quot;,&quot;id&quot;:&quot;11dFghVXANMlKmJXsNCbNl&quot;,&quot;is_local&quot;:false,&quot;name&quot;:&quot;Cut To The Feeling&quot;,&quot;popularity&quot;:0,&quot;preview_url&quot;:null,&quot;track_number&quot;:1,&quot;type&quot;:&quot;track&quot;,&quot;uri&quot;:&quot;spotify:track:11dFghVXANMlKmJXsNCbNl&quot;}
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -226,13 +229,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+      <div class="step-ref failed">9</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -241,7 +244,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.9">07:37:43.628 classpath:Spotify/Tracks.feature:9
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 298, url: https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:9
+</div>   
 
   
 
@@ -254,13 +267,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+      <div class="step-ref skipped">10</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -269,87 +282,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">15:54:07.190 [print] {
-  &quot;album&quot;: {
-    &quot;album_type&quot;: &quot;single&quot;,
-    &quot;artists&quot;: [
-      {
-        &quot;external_urls&quot;: {
-          &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju&quot;
-        },
-        &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6sFIWsNpZYqfjUpaCgueju&quot;,
-        &quot;id&quot;: &quot;6sFIWsNpZYqfjUpaCgueju&quot;,
-        &quot;name&quot;: &quot;Carly Rae Jepsen&quot;,
-        &quot;type&quot;: &quot;artist&quot;,
-        &quot;uri&quot;: &quot;spotify:artist:6sFIWsNpZYqfjUpaCgueju&quot;
-      }
-    ],
-    &quot;available_markets&quot;: [
-    ],
-    &quot;external_urls&quot;: {
-      &quot;spotify&quot;: &quot;https://open.spotify.com/album/0tGPJ0bkWOUmH7MEOR77qc&quot;
-    },
-    &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/0tGPJ0bkWOUmH7MEOR77qc&quot;,
-    &quot;id&quot;: &quot;0tGPJ0bkWOUmH7MEOR77qc&quot;,
-    &quot;images&quot;: [
-      {
-        &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2737359994525d219f64872d3b1&quot;,
-        &quot;width&quot;: 640,
-        &quot;height&quot;: 640
-      },
-      {
-        &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e027359994525d219f64872d3b1&quot;,
-        &quot;width&quot;: 300,
-        &quot;height&quot;: 300
-      },
-      {
-        &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048517359994525d219f64872d3b1&quot;,
-        &quot;width&quot;: 64,
-        &quot;height&quot;: 64
-      }
-    ],
-    &quot;name&quot;: &quot;Cut To The Feeling&quot;,
-    &quot;release_date&quot;: &quot;2017-05-26&quot;,
-    &quot;release_date_precision&quot;: &quot;day&quot;,
-    &quot;total_tracks&quot;: 1,
-    &quot;type&quot;: &quot;album&quot;,
-    &quot;uri&quot;: &quot;spotify:album:0tGPJ0bkWOUmH7MEOR77qc&quot;
-  },
-  &quot;artists&quot;: [
-    {
-      &quot;external_urls&quot;: {
-        &quot;spotify&quot;: &quot;https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju&quot;
-      },
-      &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/6sFIWsNpZYqfjUpaCgueju&quot;,
-      &quot;id&quot;: &quot;6sFIWsNpZYqfjUpaCgueju&quot;,
-      &quot;name&quot;: &quot;Carly Rae Jepsen&quot;,
-      &quot;type&quot;: &quot;artist&quot;,
-      &quot;uri&quot;: &quot;spotify:artist:6sFIWsNpZYqfjUpaCgueju&quot;
-    }
-  ],
-  &quot;available_markets&quot;: [
-  ],
-  &quot;disc_number&quot;: 1,
-  &quot;duration_ms&quot;: 207959,
-  &quot;explicit&quot;: false,
-  &quot;external_ids&quot;: {
-    &quot;isrc&quot;: &quot;USUM71703861&quot;
-  },
-  &quot;external_urls&quot;: {
-    &quot;spotify&quot;: &quot;https://open.spotify.com/track/11dFghVXANMlKmJXsNCbNl&quot;
-  },
-  &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/11dFghVXANMlKmJXsNCbNl&quot;,
-  &quot;id&quot;: &quot;11dFghVXANMlKmJXsNCbNl&quot;,
-  &quot;is_local&quot;: false,
-  &quot;name&quot;: &quot;Cut To The Feeling&quot;,
-  &quot;popularity&quot;: 0,
-  &quot;preview_url&quot;: null,
-  &quot;track_number&quot;: 1,
-  &quot;type&quot;: &quot;track&quot;,
-  &quot;uri&quot;: &quot;spotify:track:11dFghVXANMlKmJXsNCbNl&quot;
-}
- 
-</div>   
+     
 
   
 
@@ -368,8 +301,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>244</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>291</span>
             </div>
           </div>
           <div class="step-row">
@@ -448,7 +381,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">242</div>
+    <div class="time-cell passed">290</div>
   </div>
 
    
@@ -457,34 +390,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.14">15:54:07.194 request:
+  <div class="preformatted" data-parent="0.14">07:37:43.632 request:
 1 &gt; GET https://api.spotify.com/v1/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:07.434 response time in milliseconds: 239
-1 &lt; 200
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; cache-control: public, max-age=0
-1 &lt; etag: &quot;MC-IjBkYzVmODc0MjdlNDcwMThkMmQzNTRlYWZkMmFhMmQ3Ig==&quot;
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:43.921 response time in milliseconds: 288
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:07 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:45 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-{&quot;tracks&quot;:[{&quot;album&quot;:{&quot;album_type&quot;:&quot;album&quot;,&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[&quot;AR&quot;,&quot;AU&quot;,&quot;AT&quot;,&quot;BE&quot;,&quot;BO&quot;,&quot;BR&quot;,&quot;BG&quot;,&quot;CA&quot;,&quot;CL&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DK&quot;,&quot;DO&quot;,&quot;DE&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;SV&quot;,&quot;FI&quot;,&quot;FR&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;HN&quot;,&quot;HK&quot;,&quot;HU&quot;,&quot;IS&quot;,&quot;IE&quot;,&quot;IT&quot;,&quot;LV&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;MY&quot;,&quot;MT&quot;,&quot;MX&quot;,&quot;NL&quot;,&quot;NZ&quot;,&quot;NI&quot;,&quot;NO&quot;,&quot;PA&quot;,&quot;PY&quot;,&quot;PE&quot;,&quot;PH&quot;,&quot;PL&quot;,&quot;PT&quot;,&quot;SG&quot;,&quot;SK&quot;,&quot;ES&quot;,&quot;SE&quot;,&quot;CH&quot;,&quot;TW&quot;,&quot;TR&quot;,&quot;UY&quot;,&quot;US&quot;,&quot;GB&quot;,&quot;AD&quot;,&quot;LI&quot;,&quot;MC&quot;,&quot;ID&quot;,&quot;JP&quot;,&quot;TH&quot;,&quot;VN&quot;,&quot;RO&quot;,&quot;IL&quot;,&quot;ZA&quot;,&quot;SA&quot;,&quot;AE&quot;,&quot;BH&quot;,&quot;QA&quot;,&quot;OM&quot;,&quot;KW&quot;,&quot;EG&quot;,&quot;MA&quot;,&quot;DZ&quot;,&quot;TN&quot;,&quot;LB&quot;,&quot;JO&quot;,&quot;PS&quot;,&quot;IN&quot;,&quot;BY&quot;,&quot;KZ&quot;,&quot;MD&quot;,&quot;UA&quot;,&quot;AL&quot;,&quot;BA&quot;,&quot;HR&quot;,&quot;ME&quot;,&quot;MK&quot;,&quot;RS&quot;,&quot;SI&quot;,&quot;KR&quot;,&quot;BD&quot;,&quot;PK&quot;,&quot;LK&quot;,&quot;GH&quot;,&quot;KE&quot;,&quot;NG&quot;,&quot;TZ&quot;,&quot;UG&quot;,&quot;AG&quot;,&quot;AM&quot;,&quot;BS&quot;,&quot;BB&quot;,&quot;BZ&quot;,&quot;BT&quot;,&quot;BW&quot;,&quot;BF&quot;,&quot;CV&quot;,&quot;CW&quot;,&quot;DM&quot;,&quot;FJ&quot;,&quot;GM&quot;,&quot;GE&quot;,&quot;GD&quot;,&quot;GW&quot;,&quot;GY&quot;,&quot;HT&quot;,&quot;JM&quot;,&quot;KI&quot;,&quot;LS&quot;,&quot;LR&quot;,&quot;MW&quot;,&quot;MV&quot;,&quot;ML&quot;,&quot;MH&quot;,&quot;FM&quot;,&quot;NA&quot;,&quot;NR&quot;,&quot;NE&quot;,&quot;PW&quot;,&quot;PG&quot;,&quot;PR&quot;,&quot;WS&quot;,&quot;SM&quot;,&quot;ST&quot;,&quot;SN&quot;,&quot;SC&quot;,&quot;SL&quot;,&quot;SB&quot;,&quot;KN&quot;,&quot;LC&quot;,&quot;VC&quot;,&quot;SR&quot;,&quot;TL&quot;,&quot;TO&quot;,&quot;TT&quot;,&quot;TV&quot;,&quot;VU&quot;,&quot;AZ&quot;,&quot;BN&quot;,&quot;BI&quot;,&quot;KH&quot;,&quot;CM&quot;,&quot;TD&quot;,&quot;KM&quot;,&quot;GQ&quot;,&quot;SZ&quot;,&quot;GA&quot;,&quot;GN&quot;,&quot;KG&quot;,&quot;LA&quot;,&quot;MO&quot;,&quot;MR&quot;,&quot;MN&quot;,&quot;NP&quot;,&quot;RW&quot;,&quot;TG&quot;,&quot;UZ&quot;,&quot;ZW&quot;,&quot;BJ&quot;,&quot;MG&quot;,&quot;MU&quot;,&quot;MZ&quot;,&quot;AO&quot;,&quot;CI&quot;,&quot;DJ&quot;,&quot;ZM&quot;,&quot;CD&quot;,&quot;CG&quot;,&quot;IQ&quot;,&quot;LY&quot;,&quot;TJ&quot;,&quot;VE&quot;,&quot;ET&quot;,&quot;XK&quot;],&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/album/0lw68yx3MhKflWFqCsGkIs&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/albums/0lw68yx3MhKflWFqCsGkIs&quot;,&quot;id&quot;:&quot;0lw68yx3MhKflWFqCsGkIs&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b27328933b808bfb4cbbd0385400&quot;,&quot;width&quot;:640,&quot;height&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e0228933b808bfb4cbbd0385400&quot;,&quot;width&quot;:300,&quot;height&quot;:300},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000485128933b808bfb4cbbd0385400&quot;,&quot;width&quot;:64,&quot;height&quot;:64}],&quot;name&quot;:&quot;Black Holes and Revelations&quot;,&quot;release_date&quot;:&quot;2006-06-19&quot;,&quot;release_date_precision&quot;:&quot;day&quot;,&quot;total_tracks&quot;:12,&quot;type&quot;:&quot;album&quot;,&quot;uri&quot;:&quot;spotify:album:0lw68yx3MhKflWFqCsGkIs&quot;},&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[&quot;AR&quot;,&quot;AU&quot;,&quot;AT&quot;,&quot;BE&quot;,&quot;BO&quot;,&quot;BR&quot;,&quot;BG&quot;,&quot;CA&quot;,&quot;CL&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DK&quot;,&quot;DO&quot;,&quot;DE&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;SV&quot;,&quot;FI&quot;,&quot;FR&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;HN&quot;,&quot;HK&quot;,&quot;HU&quot;,&quot;IS&quot;,&quot;IE&quot;,&quot;IT&quot;,&quot;LV&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;MY&quot;,&quot;MT&quot;,&quot;MX&quot;,&quot;NL&quot;,&quot;NZ&quot;,&quot;NI&quot;,&quot;NO&quot;,&quot;PA&quot;,&quot;PY&quot;,&quot;PE&quot;,&quot;PH&quot;,&quot;PL&quot;,&quot;PT&quot;,&quot;SG&quot;,&quot;SK&quot;,&quot;ES&quot;,&quot;SE&quot;,&quot;CH&quot;,&quot;TW&quot;,&quot;TR&quot;,&quot;UY&quot;,&quot;US&quot;,&quot;GB&quot;,&quot;AD&quot;,&quot;LI&quot;,&quot;MC&quot;,&quot;ID&quot;,&quot;JP&quot;,&quot;TH&quot;,&quot;VN&quot;,&quot;RO&quot;,&quot;IL&quot;,&quot;ZA&quot;,&quot;SA&quot;,&quot;AE&quot;,&quot;BH&quot;,&quot;QA&quot;,&quot;OM&quot;,&quot;KW&quot;,&quot;EG&quot;,&quot;MA&quot;,&quot;DZ&quot;,&quot;TN&quot;,&quot;LB&quot;,&quot;JO&quot;,&quot;PS&quot;,&quot;IN&quot;,&quot;BY&quot;,&quot;KZ&quot;,&quot;MD&quot;,&quot;UA&quot;,&quot;AL&quot;,&quot;BA&quot;,&quot;HR&quot;,&quot;ME&quot;,&quot;MK&quot;,&quot;RS&quot;,&quot;SI&quot;,&quot;KR&quot;,&quot;BD&quot;,&quot;PK&quot;,&quot;LK&quot;,&quot;GH&quot;,&quot;KE&quot;,&quot;NG&quot;,&quot;TZ&quot;,&quot;UG&quot;,&quot;AG&quot;,&quot;AM&quot;,&quot;BS&quot;,&quot;BB&quot;,&quot;BZ&quot;,&quot;BT&quot;,&quot;BW&quot;,&quot;BF&quot;,&quot;CV&quot;,&quot;CW&quot;,&quot;DM&quot;,&quot;FJ&quot;,&quot;GM&quot;,&quot;GE&quot;,&quot;GD&quot;,&quot;GW&quot;,&quot;GY&quot;,&quot;HT&quot;,&quot;JM&quot;,&quot;KI&quot;,&quot;LS&quot;,&quot;LR&quot;,&quot;MW&quot;,&quot;MV&quot;,&quot;ML&quot;,&quot;MH&quot;,&quot;FM&quot;,&quot;NA&quot;,&quot;NR&quot;,&quot;NE&quot;,&quot;PW&quot;,&quot;PG&quot;,&quot;PR&quot;,&quot;WS&quot;,&quot;SM&quot;,&quot;ST&quot;,&quot;SN&quot;,&quot;SC&quot;,&quot;SL&quot;,&quot;SB&quot;,&quot;KN&quot;,&quot;LC&quot;,&quot;VC&quot;,&quot;SR&quot;,&quot;TL&quot;,&quot;TO&quot;,&quot;TT&quot;,&quot;TV&quot;,&quot;VU&quot;,&quot;AZ&quot;,&quot;BN&quot;,&quot;BI&quot;,&quot;KH&quot;,&quot;CM&quot;,&quot;TD&quot;,&quot;KM&quot;,&quot;GQ&quot;,&quot;SZ&quot;,&quot;GA&quot;,&quot;GN&quot;,&quot;KG&quot;,&quot;LA&quot;,&quot;MO&quot;,&quot;MR&quot;,&quot;MN&quot;,&quot;NP&quot;,&quot;RW&quot;,&quot;TG&quot;,&quot;UZ&quot;,&quot;ZW&quot;,&quot;BJ&quot;,&quot;MG&quot;,&quot;MU&quot;,&quot;MZ&quot;,&quot;AO&quot;,&quot;CI&quot;,&quot;DJ&quot;,&quot;ZM&quot;,&quot;CD&quot;,&quot;CG&quot;,&quot;IQ&quot;,&quot;LY&quot;,&quot;TJ&quot;,&quot;VE&quot;,&quot;ET&quot;,&quot;XK&quot;],&quot;disc_number&quot;:1,&quot;duration_ms&quot;:366213,&quot;explicit&quot;:false,&quot;external_ids&quot;:{&quot;isrc&quot;:&quot;GBAHT0500600&quot;},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/track/7ouMYWpwJ422jRcDASZB7P&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/tracks/7ouMYWpwJ422jRcDASZB7P&quot;,&quot;id&quot;:&quot;7ouMYWpwJ422jRcDASZB7P&quot;,&quot;is_local&quot;:false,&quot;name&quot;:&quot;Knights of Cydonia&quot;,&quot;popularity&quot;:65,&quot;preview_url&quot;:null,&quot;track_number&quot;:11,&quot;type&quot;:&quot;track&quot;,&quot;uri&quot;:&quot;spotify:track:7ouMYWpwJ422jRcDASZB7P&quot;},{&quot;album&quot;:{&quot;album_type&quot;:&quot;album&quot;,&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[&quot;AR&quot;,&quot;AU&quot;,&quot;AT&quot;,&quot;BE&quot;,&quot;BO&quot;,&quot;BR&quot;,&quot;BG&quot;,&quot;CA&quot;,&quot;CL&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DK&quot;,&quot;DO&quot;,&quot;DE&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;SV&quot;,&quot;FI&quot;,&quot;FR&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;HN&quot;,&quot;HK&quot;,&quot;HU&quot;,&quot;IS&quot;,&quot;IE&quot;,&quot;IT&quot;,&quot;LV&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;MY&quot;,&quot;MT&quot;,&quot;MX&quot;,&quot;NL&quot;,&quot;NZ&quot;,&quot;NI&quot;,&quot;NO&quot;,&quot;PA&quot;,&quot;PY&quot;,&quot;PE&quot;,&quot;PH&quot;,&quot;PL&quot;,&quot;PT&quot;,&quot;SG&quot;,&quot;SK&quot;,&quot;ES&quot;,&quot;SE&quot;,&quot;CH&quot;,&quot;TW&quot;,&quot;TR&quot;,&quot;UY&quot;,&quot;US&quot;,&quot;GB&quot;,&quot;AD&quot;,&quot;LI&quot;,&quot;MC&quot;,&quot;ID&quot;,&quot;JP&quot;,&quot;TH&quot;,&quot;VN&quot;,&quot;RO&quot;,&quot;IL&quot;,&quot;ZA&quot;,&quot;SA&quot;,&quot;AE&quot;,&quot;BH&quot;,&quot;QA&quot;,&quot;OM&quot;,&quot;KW&quot;,&quot;EG&quot;,&quot;MA&quot;,&quot;DZ&quot;,&quot;TN&quot;,&quot;LB&quot;,&quot;JO&quot;,&quot;PS&quot;,&quot;IN&quot;,&quot;BY&quot;,&quot;KZ&quot;,&quot;MD&quot;,&quot;UA&quot;,&quot;AL&quot;,&quot;BA&quot;,&quot;HR&quot;,&quot;ME&quot;,&quot;MK&quot;,&quot;RS&quot;,&quot;SI&quot;,&quot;KR&quot;,&quot;BD&quot;,&quot;PK&quot;,&quot;LK&quot;,&quot;GH&quot;,&quot;KE&quot;,&quot;NG&quot;,&quot;TZ&quot;,&quot;UG&quot;,&quot;AG&quot;,&quot;AM&quot;,&quot;BS&quot;,&quot;BB&quot;,&quot;BZ&quot;,&quot;BT&quot;,&quot;BW&quot;,&quot;BF&quot;,&quot;CV&quot;,&quot;CW&quot;,&quot;DM&quot;,&quot;FJ&quot;,&quot;GM&quot;,&quot;GE&quot;,&quot;GD&quot;,&quot;GW&quot;,&quot;GY&quot;,&quot;HT&quot;,&quot;JM&quot;,&quot;KI&quot;,&quot;LS&quot;,&quot;LR&quot;,&quot;MW&quot;,&quot;MV&quot;,&quot;ML&quot;,&quot;MH&quot;,&quot;FM&quot;,&quot;NA&quot;,&quot;NR&quot;,&quot;NE&quot;,&quot;PW&quot;,&quot;PG&quot;,&quot;WS&quot;,&quot;SM&quot;,&quot;ST&quot;,&quot;SN&quot;,&quot;SC&quot;,&quot;SL&quot;,&quot;SB&quot;,&quot;KN&quot;,&quot;LC&quot;,&quot;VC&quot;,&quot;SR&quot;,&quot;TL&quot;,&quot;TO&quot;,&quot;TT&quot;,&quot;TV&quot;,&quot;VU&quot;,&quot;AZ&quot;,&quot;BN&quot;,&quot;BI&quot;,&quot;KH&quot;,&quot;CM&quot;,&quot;TD&quot;,&quot;KM&quot;,&quot;GQ&quot;,&quot;SZ&quot;,&quot;GA&quot;,&quot;GN&quot;,&quot;KG&quot;,&quot;LA&quot;,&quot;MO&quot;,&quot;MR&quot;,&quot;MN&quot;,&quot;NP&quot;,&quot;RW&quot;,&quot;TG&quot;,&quot;UZ&quot;,&quot;ZW&quot;,&quot;BJ&quot;,&quot;MG&quot;,&quot;MU&quot;,&quot;MZ&quot;,&quot;AO&quot;,&quot;CI&quot;,&quot;DJ&quot;,&quot;ZM&quot;,&quot;CD&quot;,&quot;CG&quot;,&quot;IQ&quot;,&quot;LY&quot;,&quot;TJ&quot;,&quot;VE&quot;,&quot;ET&quot;,&quot;XK&quot;],&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/album/0eFHYz8NmK75zSplL5qlfM&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/albums/0eFHYz8NmK75zSplL5qlfM&quot;,&quot;id&quot;:&quot;0eFHYz8NmK75zSplL5qlfM&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b273b6d4566db0d12894a1a3b7a2&quot;,&quot;width&quot;:640,&quot;height&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e02b6d4566db0d12894a1a3b7a2&quot;,&quot;width&quot;:300,&quot;height&quot;:300},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00004851b6d4566db0d12894a1a3b7a2&quot;,&quot;width&quot;:64,&quot;height&quot;:64}],&quot;name&quot;:&quot;The Resistance&quot;,&quot;release_date&quot;:&quot;2009-09-10&quot;,&quot;release_date_precision&quot;:&quot;day&quot;,&quot;total_tracks&quot;:11,&quot;type&quot;:&quot;album&quot;,&quot;uri&quot;:&quot;spotify:album:0eFHYz8NmK75zSplL5qlfM&quot;},&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[&quot;AR&quot;,&quot;AU&quot;,&quot;AT&quot;,&quot;BE&quot;,&quot;BO&quot;,&quot;BR&quot;,&quot;BG&quot;,&quot;CA&quot;,&quot;CL&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DK&quot;,&quot;DO&quot;,&quot;DE&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;SV&quot;,&quot;FI&quot;,&quot;FR&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;HN&quot;,&quot;HK&quot;,&quot;HU&quot;,&quot;IS&quot;,&quot;IE&quot;,&quot;IT&quot;,&quot;LV&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;MY&quot;,&quot;MT&quot;,&quot;MX&quot;,&quot;NL&quot;,&quot;NZ&quot;,&quot;NI&quot;,&quot;NO&quot;,&quot;PA&quot;,&quot;PY&quot;,&quot;PE&quot;,&quot;PH&quot;,&quot;PL&quot;,&quot;PT&quot;,&quot;SG&quot;,&quot;SK&quot;,&quot;ES&quot;,&quot;SE&quot;,&quot;CH&quot;,&quot;TW&quot;,&quot;TR&quot;,&quot;UY&quot;,&quot;US&quot;,&quot;GB&quot;,&quot;AD&quot;,&quot;LI&quot;,&quot;MC&quot;,&quot;ID&quot;,&quot;JP&quot;,&quot;TH&quot;,&quot;VN&quot;,&quot;RO&quot;,&quot;IL&quot;,&quot;ZA&quot;,&quot;SA&quot;,&quot;AE&quot;,&quot;BH&quot;,&quot;QA&quot;,&quot;OM&quot;,&quot;KW&quot;,&quot;EG&quot;,&quot;MA&quot;,&quot;DZ&quot;,&quot;TN&quot;,&quot;LB&quot;,&quot;JO&quot;,&quot;PS&quot;,&quot;IN&quot;,&quot;BY&quot;,&quot;KZ&quot;,&quot;MD&quot;,&quot;UA&quot;,&quot;AL&quot;,&quot;BA&quot;,&quot;HR&quot;,&quot;ME&quot;,&quot;MK&quot;,&quot;RS&quot;,&quot;SI&quot;,&quot;KR&quot;,&quot;BD&quot;,&quot;PK&quot;,&quot;LK&quot;,&quot;GH&quot;,&quot;KE&quot;,&quot;NG&quot;,&quot;TZ&quot;,&quot;UG&quot;,&quot;AG&quot;,&quot;AM&quot;,&quot;BS&quot;,&quot;BB&quot;,&quot;BZ&quot;,&quot;BT&quot;,&quot;BW&quot;,&quot;BF&quot;,&quot;CV&quot;,&quot;CW&quot;,&quot;DM&quot;,&quot;FJ&quot;,&quot;GM&quot;,&quot;GE&quot;,&quot;GD&quot;,&quot;GW&quot;,&quot;GY&quot;,&quot;HT&quot;,&quot;JM&quot;,&quot;KI&quot;,&quot;LS&quot;,&quot;LR&quot;,&quot;MW&quot;,&quot;MV&quot;,&quot;ML&quot;,&quot;MH&quot;,&quot;FM&quot;,&quot;NA&quot;,&quot;NR&quot;,&quot;NE&quot;,&quot;PW&quot;,&quot;PG&quot;,&quot;WS&quot;,&quot;SM&quot;,&quot;ST&quot;,&quot;SN&quot;,&quot;SC&quot;,&quot;SL&quot;,&quot;SB&quot;,&quot;KN&quot;,&quot;LC&quot;,&quot;VC&quot;,&quot;SR&quot;,&quot;TL&quot;,&quot;TO&quot;,&quot;TT&quot;,&quot;TV&quot;,&quot;VU&quot;,&quot;AZ&quot;,&quot;BN&quot;,&quot;BI&quot;,&quot;KH&quot;,&quot;CM&quot;,&quot;TD&quot;,&quot;KM&quot;,&quot;GQ&quot;,&quot;SZ&quot;,&quot;GA&quot;,&quot;GN&quot;,&quot;KG&quot;,&quot;LA&quot;,&quot;MO&quot;,&quot;MR&quot;,&quot;MN&quot;,&quot;NP&quot;,&quot;RW&quot;,&quot;TG&quot;,&quot;UZ&quot;,&quot;ZW&quot;,&quot;BJ&quot;,&quot;MG&quot;,&quot;MU&quot;,&quot;MZ&quot;,&quot;AO&quot;,&quot;CI&quot;,&quot;DJ&quot;,&quot;ZM&quot;,&quot;CD&quot;,&quot;CG&quot;,&quot;IQ&quot;,&quot;LY&quot;,&quot;TJ&quot;,&quot;VE&quot;,&quot;ET&quot;,&quot;XK&quot;],&quot;disc_number&quot;:1,&quot;duration_ms&quot;:304840,&quot;explicit&quot;:false,&quot;external_ids&quot;:{&quot;isrc&quot;:&quot;GBAHT0900320&quot;},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/track/4VqPOruhp5EdPBeR92t6lQ&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/tracks/4VqPOruhp5EdPBeR92t6lQ&quot;,&quot;id&quot;:&quot;4VqPOruhp5EdPBeR92t6lQ&quot;,&quot;is_local&quot;:false,&quot;name&quot;:&quot;Uprising&quot;,&quot;popularity&quot;:74,&quot;preview_url&quot;:null,&quot;track_number&quot;:1,&quot;type&quot;:&quot;track&quot;,&quot;uri&quot;:&quot;spotify:track:4VqPOruhp5EdPBeR92t6lQ&quot;},{&quot;album&quot;:{&quot;album_type&quot;:&quot;album&quot;,&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[],&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/album/0HcHPBu9aaF1MxOiZmUQTl&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl&quot;,&quot;id&quot;:&quot;0HcHPBu9aaF1MxOiZmUQTl&quot;,&quot;images&quot;:[{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b2738cb690f962092fd44bbe2bf4&quot;,&quot;width&quot;:640,&quot;height&quot;:640},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e028cb690f962092fd44bbe2bf4&quot;,&quot;width&quot;:300,&quot;height&quot;:300},{&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d000048518cb690f962092fd44bbe2bf4&quot;,&quot;width&quot;:64,&quot;height&quot;:64}],&quot;name&quot;:&quot;Absolution&quot;,&quot;release_date&quot;:&quot;2004-03-23&quot;,&quot;release_date_precision&quot;:&quot;day&quot;,&quot;total_tracks&quot;:15,&quot;type&quot;:&quot;album&quot;,&quot;uri&quot;:&quot;spotify:album:0HcHPBu9aaF1MxOiZmUQTl&quot;},&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[],&quot;disc_number&quot;:1,&quot;duration_ms&quot;:237039,&quot;explicit&quot;:false,&quot;external_ids&quot;:{&quot;isrc&quot;:&quot;GBCVT0300078&quot;},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/track/2takcwOaAZWiXQijPHIx7B&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B&quot;,&quot;id&quot;:&quot;2takcwOaAZWiXQijPHIx7B&quot;,&quot;is_local&quot;:false,&quot;name&quot;:&quot;Time is Running Out&quot;,&quot;popularity&quot;:5,&quot;preview_url&quot;:null,&quot;track_number&quot;:3,&quot;type&quot;:&quot;track&quot;,&quot;uri&quot;:&quot;spotify:track:2takcwOaAZWiXQijPHIx7B&quot;}]}
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -499,13 +435,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+      <div class="step-ref failed">15</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -514,7 +450,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.15">07:37:43.922 classpath:Spotify/Tracks.feature:15
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 288, url: https://api.spotify.com/v1/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:15
+</div>   
 
   
 
@@ -527,13 +473,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
+      <div class="step-ref skipped">16</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -542,987 +488,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.16">15:54:07.436 [print] {
-  &quot;tracks&quot;: [
-    {
-      &quot;album&quot;: {
-        &quot;album_type&quot;: &quot;album&quot;,
-        &quot;artists&quot;: [
-          {
-            &quot;external_urls&quot;: {
-              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-            },
-            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;name&quot;: &quot;Muse&quot;,
-            &quot;type&quot;: &quot;artist&quot;,
-            &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-          }
-        ],
-        &quot;available_markets&quot;: [
-          &quot;AR&quot;,
-          &quot;AU&quot;,
-          &quot;AT&quot;,
-          &quot;BE&quot;,
-          &quot;BO&quot;,
-          &quot;BR&quot;,
-          &quot;BG&quot;,
-          &quot;CA&quot;,
-          &quot;CL&quot;,
-          &quot;CO&quot;,
-          &quot;CR&quot;,
-          &quot;CY&quot;,
-          &quot;CZ&quot;,
-          &quot;DK&quot;,
-          &quot;DO&quot;,
-          &quot;DE&quot;,
-          &quot;EC&quot;,
-          &quot;EE&quot;,
-          &quot;SV&quot;,
-          &quot;FI&quot;,
-          &quot;FR&quot;,
-          &quot;GR&quot;,
-          &quot;GT&quot;,
-          &quot;HN&quot;,
-          &quot;HK&quot;,
-          &quot;HU&quot;,
-          &quot;IS&quot;,
-          &quot;IE&quot;,
-          &quot;IT&quot;,
-          &quot;LV&quot;,
-          &quot;LT&quot;,
-          &quot;LU&quot;,
-          &quot;MY&quot;,
-          &quot;MT&quot;,
-          &quot;MX&quot;,
-          &quot;NL&quot;,
-          &quot;NZ&quot;,
-          &quot;NI&quot;,
-          &quot;NO&quot;,
-          &quot;PA&quot;,
-          &quot;PY&quot;,
-          &quot;PE&quot;,
-          &quot;PH&quot;,
-          &quot;PL&quot;,
-          &quot;PT&quot;,
-          &quot;SG&quot;,
-          &quot;SK&quot;,
-          &quot;ES&quot;,
-          &quot;SE&quot;,
-          &quot;CH&quot;,
-          &quot;TW&quot;,
-          &quot;TR&quot;,
-          &quot;UY&quot;,
-          &quot;US&quot;,
-          &quot;GB&quot;,
-          &quot;AD&quot;,
-          &quot;LI&quot;,
-          &quot;MC&quot;,
-          &quot;ID&quot;,
-          &quot;JP&quot;,
-          &quot;TH&quot;,
-          &quot;VN&quot;,
-          &quot;RO&quot;,
-          &quot;IL&quot;,
-          &quot;ZA&quot;,
-          &quot;SA&quot;,
-          &quot;AE&quot;,
-          &quot;BH&quot;,
-          &quot;QA&quot;,
-          &quot;OM&quot;,
-          &quot;KW&quot;,
-          &quot;EG&quot;,
-          &quot;MA&quot;,
-          &quot;DZ&quot;,
-          &quot;TN&quot;,
-          &quot;LB&quot;,
-          &quot;JO&quot;,
-          &quot;PS&quot;,
-          &quot;IN&quot;,
-          &quot;BY&quot;,
-          &quot;KZ&quot;,
-          &quot;MD&quot;,
-          &quot;UA&quot;,
-          &quot;AL&quot;,
-          &quot;BA&quot;,
-          &quot;HR&quot;,
-          &quot;ME&quot;,
-          &quot;MK&quot;,
-          &quot;RS&quot;,
-          &quot;SI&quot;,
-          &quot;KR&quot;,
-          &quot;BD&quot;,
-          &quot;PK&quot;,
-          &quot;LK&quot;,
-          &quot;GH&quot;,
-          &quot;KE&quot;,
-          &quot;NG&quot;,
-          &quot;TZ&quot;,
-          &quot;UG&quot;,
-          &quot;AG&quot;,
-          &quot;AM&quot;,
-          &quot;BS&quot;,
-          &quot;BB&quot;,
-          &quot;BZ&quot;,
-          &quot;BT&quot;,
-          &quot;BW&quot;,
-          &quot;BF&quot;,
-          &quot;CV&quot;,
-          &quot;CW&quot;,
-          &quot;DM&quot;,
-          &quot;FJ&quot;,
-          &quot;GM&quot;,
-          &quot;GE&quot;,
-          &quot;GD&quot;,
-          &quot;GW&quot;,
-          &quot;GY&quot;,
-          &quot;HT&quot;,
-          &quot;JM&quot;,
-          &quot;KI&quot;,
-          &quot;LS&quot;,
-          &quot;LR&quot;,
-          &quot;MW&quot;,
-          &quot;MV&quot;,
-          &quot;ML&quot;,
-          &quot;MH&quot;,
-          &quot;FM&quot;,
-          &quot;NA&quot;,
-          &quot;NR&quot;,
-          &quot;NE&quot;,
-          &quot;PW&quot;,
-          &quot;PG&quot;,
-          &quot;PR&quot;,
-          &quot;WS&quot;,
-          &quot;SM&quot;,
-          &quot;ST&quot;,
-          &quot;SN&quot;,
-          &quot;SC&quot;,
-          &quot;SL&quot;,
-          &quot;SB&quot;,
-          &quot;KN&quot;,
-          &quot;LC&quot;,
-          &quot;VC&quot;,
-          &quot;SR&quot;,
-          &quot;TL&quot;,
-          &quot;TO&quot;,
-          &quot;TT&quot;,
-          &quot;TV&quot;,
-          &quot;VU&quot;,
-          &quot;AZ&quot;,
-          &quot;BN&quot;,
-          &quot;BI&quot;,
-          &quot;KH&quot;,
-          &quot;CM&quot;,
-          &quot;TD&quot;,
-          &quot;KM&quot;,
-          &quot;GQ&quot;,
-          &quot;SZ&quot;,
-          &quot;GA&quot;,
-          &quot;GN&quot;,
-          &quot;KG&quot;,
-          &quot;LA&quot;,
-          &quot;MO&quot;,
-          &quot;MR&quot;,
-          &quot;MN&quot;,
-          &quot;NP&quot;,
-          &quot;RW&quot;,
-          &quot;TG&quot;,
-          &quot;UZ&quot;,
-          &quot;ZW&quot;,
-          &quot;BJ&quot;,
-          &quot;MG&quot;,
-          &quot;MU&quot;,
-          &quot;MZ&quot;,
-          &quot;AO&quot;,
-          &quot;CI&quot;,
-          &quot;DJ&quot;,
-          &quot;ZM&quot;,
-          &quot;CD&quot;,
-          &quot;CG&quot;,
-          &quot;IQ&quot;,
-          &quot;LY&quot;,
-          &quot;TJ&quot;,
-          &quot;VE&quot;,
-          &quot;ET&quot;,
-          &quot;XK&quot;
-        ],
-        &quot;external_urls&quot;: {
-          &quot;spotify&quot;: &quot;https://open.spotify.com/album/0lw68yx3MhKflWFqCsGkIs&quot;
-        },
-        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/0lw68yx3MhKflWFqCsGkIs&quot;,
-        &quot;id&quot;: &quot;0lw68yx3MhKflWFqCsGkIs&quot;,
-        &quot;images&quot;: [
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b27328933b808bfb4cbbd0385400&quot;,
-            &quot;width&quot;: 640,
-            &quot;height&quot;: 640
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e0228933b808bfb4cbbd0385400&quot;,
-            &quot;width&quot;: 300,
-            &quot;height&quot;: 300
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000485128933b808bfb4cbbd0385400&quot;,
-            &quot;width&quot;: 64,
-            &quot;height&quot;: 64
-          }
-        ],
-        &quot;name&quot;: &quot;Black Holes and Revelations&quot;,
-        &quot;release_date&quot;: &quot;2006-06-19&quot;,
-        &quot;release_date_precision&quot;: &quot;day&quot;,
-        &quot;total_tracks&quot;: 12,
-        &quot;type&quot;: &quot;album&quot;,
-        &quot;uri&quot;: &quot;spotify:album:0lw68yx3MhKflWFqCsGkIs&quot;
-      },
-      &quot;artists&quot;: [
-        {
-          &quot;external_urls&quot;: {
-            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-          },
-          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;name&quot;: &quot;Muse&quot;,
-          &quot;type&quot;: &quot;artist&quot;,
-          &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-        }
-      ],
-      &quot;available_markets&quot;: [
-        &quot;AR&quot;,
-        &quot;AU&quot;,
-        &quot;AT&quot;,
-        &quot;BE&quot;,
-        &quot;BO&quot;,
-        &quot;BR&quot;,
-        &quot;BG&quot;,
-        &quot;CA&quot;,
-        &quot;CL&quot;,
-        &quot;CO&quot;,
-        &quot;CR&quot;,
-        &quot;CY&quot;,
-        &quot;CZ&quot;,
-        &quot;DK&quot;,
-        &quot;DO&quot;,
-        &quot;DE&quot;,
-        &quot;EC&quot;,
-        &quot;EE&quot;,
-        &quot;SV&quot;,
-        &quot;FI&quot;,
-        &quot;FR&quot;,
-        &quot;GR&quot;,
-        &quot;GT&quot;,
-        &quot;HN&quot;,
-        &quot;HK&quot;,
-        &quot;HU&quot;,
-        &quot;IS&quot;,
-        &quot;IE&quot;,
-        &quot;IT&quot;,
-        &quot;LV&quot;,
-        &quot;LT&quot;,
-        &quot;LU&quot;,
-        &quot;MY&quot;,
-        &quot;MT&quot;,
-        &quot;MX&quot;,
-        &quot;NL&quot;,
-        &quot;NZ&quot;,
-        &quot;NI&quot;,
-        &quot;NO&quot;,
-        &quot;PA&quot;,
-        &quot;PY&quot;,
-        &quot;PE&quot;,
-        &quot;PH&quot;,
-        &quot;PL&quot;,
-        &quot;PT&quot;,
-        &quot;SG&quot;,
-        &quot;SK&quot;,
-        &quot;ES&quot;,
-        &quot;SE&quot;,
-        &quot;CH&quot;,
-        &quot;TW&quot;,
-        &quot;TR&quot;,
-        &quot;UY&quot;,
-        &quot;US&quot;,
-        &quot;GB&quot;,
-        &quot;AD&quot;,
-        &quot;LI&quot;,
-        &quot;MC&quot;,
-        &quot;ID&quot;,
-        &quot;JP&quot;,
-        &quot;TH&quot;,
-        &quot;VN&quot;,
-        &quot;RO&quot;,
-        &quot;IL&quot;,
-        &quot;ZA&quot;,
-        &quot;SA&quot;,
-        &quot;AE&quot;,
-        &quot;BH&quot;,
-        &quot;QA&quot;,
-        &quot;OM&quot;,
-        &quot;KW&quot;,
-        &quot;EG&quot;,
-        &quot;MA&quot;,
-        &quot;DZ&quot;,
-        &quot;TN&quot;,
-        &quot;LB&quot;,
-        &quot;JO&quot;,
-        &quot;PS&quot;,
-        &quot;IN&quot;,
-        &quot;BY&quot;,
-        &quot;KZ&quot;,
-        &quot;MD&quot;,
-        &quot;UA&quot;,
-        &quot;AL&quot;,
-        &quot;BA&quot;,
-        &quot;HR&quot;,
-        &quot;ME&quot;,
-        &quot;MK&quot;,
-        &quot;RS&quot;,
-        &quot;SI&quot;,
-        &quot;KR&quot;,
-        &quot;BD&quot;,
-        &quot;PK&quot;,
-        &quot;LK&quot;,
-        &quot;GH&quot;,
-        &quot;KE&quot;,
-        &quot;NG&quot;,
-        &quot;TZ&quot;,
-        &quot;UG&quot;,
-        &quot;AG&quot;,
-        &quot;AM&quot;,
-        &quot;BS&quot;,
-        &quot;BB&quot;,
-        &quot;BZ&quot;,
-        &quot;BT&quot;,
-        &quot;BW&quot;,
-        &quot;BF&quot;,
-        &quot;CV&quot;,
-        &quot;CW&quot;,
-        &quot;DM&quot;,
-        &quot;FJ&quot;,
-        &quot;GM&quot;,
-        &quot;GE&quot;,
-        &quot;GD&quot;,
-        &quot;GW&quot;,
-        &quot;GY&quot;,
-        &quot;HT&quot;,
-        &quot;JM&quot;,
-        &quot;KI&quot;,
-        &quot;LS&quot;,
-        &quot;LR&quot;,
-        &quot;MW&quot;,
-        &quot;MV&quot;,
-        &quot;ML&quot;,
-        &quot;MH&quot;,
-        &quot;FM&quot;,
-        &quot;NA&quot;,
-        &quot;NR&quot;,
-        &quot;NE&quot;,
-        &quot;PW&quot;,
-        &quot;PG&quot;,
-        &quot;PR&quot;,
-        &quot;WS&quot;,
-        &quot;SM&quot;,
-        &quot;ST&quot;,
-        &quot;SN&quot;,
-        &quot;SC&quot;,
-        &quot;SL&quot;,
-        &quot;SB&quot;,
-        &quot;KN&quot;,
-        &quot;LC&quot;,
-        &quot;VC&quot;,
-        &quot;SR&quot;,
-        &quot;TL&quot;,
-        &quot;TO&quot;,
-        &quot;TT&quot;,
-        &quot;TV&quot;,
-        &quot;VU&quot;,
-        &quot;AZ&quot;,
-        &quot;BN&quot;,
-        &quot;BI&quot;,
-        &quot;KH&quot;,
-        &quot;CM&quot;,
-        &quot;TD&quot;,
-        &quot;KM&quot;,
-        &quot;GQ&quot;,
-        &quot;SZ&quot;,
-        &quot;GA&quot;,
-        &quot;GN&quot;,
-        &quot;KG&quot;,
-        &quot;LA&quot;,
-        &quot;MO&quot;,
-        &quot;MR&quot;,
-        &quot;MN&quot;,
-        &quot;NP&quot;,
-        &quot;RW&quot;,
-        &quot;TG&quot;,
-        &quot;UZ&quot;,
-        &quot;ZW&quot;,
-        &quot;BJ&quot;,
-        &quot;MG&quot;,
-        &quot;MU&quot;,
-        &quot;MZ&quot;,
-        &quot;AO&quot;,
-        &quot;CI&quot;,
-        &quot;DJ&quot;,
-        &quot;ZM&quot;,
-        &quot;CD&quot;,
-        &quot;CG&quot;,
-        &quot;IQ&quot;,
-        &quot;LY&quot;,
-        &quot;TJ&quot;,
-        &quot;VE&quot;,
-        &quot;ET&quot;,
-        &quot;XK&quot;
-      ],
-      &quot;disc_number&quot;: 1,
-      &quot;duration_ms&quot;: 366213,
-      &quot;explicit&quot;: false,
-      &quot;external_ids&quot;: {
-        &quot;isrc&quot;: &quot;GBAHT0500600&quot;
-      },
-      &quot;external_urls&quot;: {
-        &quot;spotify&quot;: &quot;https://open.spotify.com/track/7ouMYWpwJ422jRcDASZB7P&quot;
-      },
-      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/7ouMYWpwJ422jRcDASZB7P&quot;,
-      &quot;id&quot;: &quot;7ouMYWpwJ422jRcDASZB7P&quot;,
-      &quot;is_local&quot;: false,
-      &quot;name&quot;: &quot;Knights of Cydonia&quot;,
-      &quot;popularity&quot;: 65,
-      &quot;preview_url&quot;: null,
-      &quot;track_number&quot;: 11,
-      &quot;type&quot;: &quot;track&quot;,
-      &quot;uri&quot;: &quot;spotify:track:7ouMYWpwJ422jRcDASZB7P&quot;
-    },
-    {
-      &quot;album&quot;: {
-        &quot;album_type&quot;: &quot;album&quot;,
-        &quot;artists&quot;: [
-          {
-            &quot;external_urls&quot;: {
-              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-            },
-            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;name&quot;: &quot;Muse&quot;,
-            &quot;type&quot;: &quot;artist&quot;,
-            &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-          }
-        ],
-        &quot;available_markets&quot;: [
-          &quot;AR&quot;,
-          &quot;AU&quot;,
-          &quot;AT&quot;,
-          &quot;BE&quot;,
-          &quot;BO&quot;,
-          &quot;BR&quot;,
-          &quot;BG&quot;,
-          &quot;CA&quot;,
-          &quot;CL&quot;,
-          &quot;CO&quot;,
-          &quot;CR&quot;,
-          &quot;CY&quot;,
-          &quot;CZ&quot;,
-          &quot;DK&quot;,
-          &quot;DO&quot;,
-          &quot;DE&quot;,
-          &quot;EC&quot;,
-          &quot;EE&quot;,
-          &quot;SV&quot;,
-          &quot;FI&quot;,
-          &quot;FR&quot;,
-          &quot;GR&quot;,
-          &quot;GT&quot;,
-          &quot;HN&quot;,
-          &quot;HK&quot;,
-          &quot;HU&quot;,
-          &quot;IS&quot;,
-          &quot;IE&quot;,
-          &quot;IT&quot;,
-          &quot;LV&quot;,
-          &quot;LT&quot;,
-          &quot;LU&quot;,
-          &quot;MY&quot;,
-          &quot;MT&quot;,
-          &quot;MX&quot;,
-          &quot;NL&quot;,
-          &quot;NZ&quot;,
-          &quot;NI&quot;,
-          &quot;NO&quot;,
-          &quot;PA&quot;,
-          &quot;PY&quot;,
-          &quot;PE&quot;,
-          &quot;PH&quot;,
-          &quot;PL&quot;,
-          &quot;PT&quot;,
-          &quot;SG&quot;,
-          &quot;SK&quot;,
-          &quot;ES&quot;,
-          &quot;SE&quot;,
-          &quot;CH&quot;,
-          &quot;TW&quot;,
-          &quot;TR&quot;,
-          &quot;UY&quot;,
-          &quot;US&quot;,
-          &quot;GB&quot;,
-          &quot;AD&quot;,
-          &quot;LI&quot;,
-          &quot;MC&quot;,
-          &quot;ID&quot;,
-          &quot;JP&quot;,
-          &quot;TH&quot;,
-          &quot;VN&quot;,
-          &quot;RO&quot;,
-          &quot;IL&quot;,
-          &quot;ZA&quot;,
-          &quot;SA&quot;,
-          &quot;AE&quot;,
-          &quot;BH&quot;,
-          &quot;QA&quot;,
-          &quot;OM&quot;,
-          &quot;KW&quot;,
-          &quot;EG&quot;,
-          &quot;MA&quot;,
-          &quot;DZ&quot;,
-          &quot;TN&quot;,
-          &quot;LB&quot;,
-          &quot;JO&quot;,
-          &quot;PS&quot;,
-          &quot;IN&quot;,
-          &quot;BY&quot;,
-          &quot;KZ&quot;,
-          &quot;MD&quot;,
-          &quot;UA&quot;,
-          &quot;AL&quot;,
-          &quot;BA&quot;,
-          &quot;HR&quot;,
-          &quot;ME&quot;,
-          &quot;MK&quot;,
-          &quot;RS&quot;,
-          &quot;SI&quot;,
-          &quot;KR&quot;,
-          &quot;BD&quot;,
-          &quot;PK&quot;,
-          &quot;LK&quot;,
-          &quot;GH&quot;,
-          &quot;KE&quot;,
-          &quot;NG&quot;,
-          &quot;TZ&quot;,
-          &quot;UG&quot;,
-          &quot;AG&quot;,
-          &quot;AM&quot;,
-          &quot;BS&quot;,
-          &quot;BB&quot;,
-          &quot;BZ&quot;,
-          &quot;BT&quot;,
-          &quot;BW&quot;,
-          &quot;BF&quot;,
-          &quot;CV&quot;,
-          &quot;CW&quot;,
-          &quot;DM&quot;,
-          &quot;FJ&quot;,
-          &quot;GM&quot;,
-          &quot;GE&quot;,
-          &quot;GD&quot;,
-          &quot;GW&quot;,
-          &quot;GY&quot;,
-          &quot;HT&quot;,
-          &quot;JM&quot;,
-          &quot;KI&quot;,
-          &quot;LS&quot;,
-          &quot;LR&quot;,
-          &quot;MW&quot;,
-          &quot;MV&quot;,
-          &quot;ML&quot;,
-          &quot;MH&quot;,
-          &quot;FM&quot;,
-          &quot;NA&quot;,
-          &quot;NR&quot;,
-          &quot;NE&quot;,
-          &quot;PW&quot;,
-          &quot;PG&quot;,
-          &quot;WS&quot;,
-          &quot;SM&quot;,
-          &quot;ST&quot;,
-          &quot;SN&quot;,
-          &quot;SC&quot;,
-          &quot;SL&quot;,
-          &quot;SB&quot;,
-          &quot;KN&quot;,
-          &quot;LC&quot;,
-          &quot;VC&quot;,
-          &quot;SR&quot;,
-          &quot;TL&quot;,
-          &quot;TO&quot;,
-          &quot;TT&quot;,
-          &quot;TV&quot;,
-          &quot;VU&quot;,
-          &quot;AZ&quot;,
-          &quot;BN&quot;,
-          &quot;BI&quot;,
-          &quot;KH&quot;,
-          &quot;CM&quot;,
-          &quot;TD&quot;,
-          &quot;KM&quot;,
-          &quot;GQ&quot;,
-          &quot;SZ&quot;,
-          &quot;GA&quot;,
-          &quot;GN&quot;,
-          &quot;KG&quot;,
-          &quot;LA&quot;,
-          &quot;MO&quot;,
-          &quot;MR&quot;,
-          &quot;MN&quot;,
-          &quot;NP&quot;,
-          &quot;RW&quot;,
-          &quot;TG&quot;,
-          &quot;UZ&quot;,
-          &quot;ZW&quot;,
-          &quot;BJ&quot;,
-          &quot;MG&quot;,
-          &quot;MU&quot;,
-          &quot;MZ&quot;,
-          &quot;AO&quot;,
-          &quot;CI&quot;,
-          &quot;DJ&quot;,
-          &quot;ZM&quot;,
-          &quot;CD&quot;,
-          &quot;CG&quot;,
-          &quot;IQ&quot;,
-          &quot;LY&quot;,
-          &quot;TJ&quot;,
-          &quot;VE&quot;,
-          &quot;ET&quot;,
-          &quot;XK&quot;
-        ],
-        &quot;external_urls&quot;: {
-          &quot;spotify&quot;: &quot;https://open.spotify.com/album/0eFHYz8NmK75zSplL5qlfM&quot;
-        },
-        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/0eFHYz8NmK75zSplL5qlfM&quot;,
-        &quot;id&quot;: &quot;0eFHYz8NmK75zSplL5qlfM&quot;,
-        &quot;images&quot;: [
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b273b6d4566db0d12894a1a3b7a2&quot;,
-            &quot;width&quot;: 640,
-            &quot;height&quot;: 640
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e02b6d4566db0d12894a1a3b7a2&quot;,
-            &quot;width&quot;: 300,
-            &quot;height&quot;: 300
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00004851b6d4566db0d12894a1a3b7a2&quot;,
-            &quot;width&quot;: 64,
-            &quot;height&quot;: 64
-          }
-        ],
-        &quot;name&quot;: &quot;The Resistance&quot;,
-        &quot;release_date&quot;: &quot;2009-09-10&quot;,
-        &quot;release_date_precision&quot;: &quot;day&quot;,
-        &quot;total_tracks&quot;: 11,
-        &quot;type&quot;: &quot;album&quot;,
-        &quot;uri&quot;: &quot;spotify:album:0eFHYz8NmK75zSplL5qlfM&quot;
-      },
-      &quot;artists&quot;: [
-        {
-          &quot;external_urls&quot;: {
-            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-          },
-          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;name&quot;: &quot;Muse&quot;,
-          &quot;type&quot;: &quot;artist&quot;,
-          &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-        }
-      ],
-      &quot;available_markets&quot;: [
-        &quot;AR&quot;,
-        &quot;AU&quot;,
-        &quot;AT&quot;,
-        &quot;BE&quot;,
-        &quot;BO&quot;,
-        &quot;BR&quot;,
-        &quot;BG&quot;,
-        &quot;CA&quot;,
-        &quot;CL&quot;,
-        &quot;CO&quot;,
-        &quot;CR&quot;,
-        &quot;CY&quot;,
-        &quot;CZ&quot;,
-        &quot;DK&quot;,
-        &quot;DO&quot;,
-        &quot;DE&quot;,
-        &quot;EC&quot;,
-        &quot;EE&quot;,
-        &quot;SV&quot;,
-        &quot;FI&quot;,
-        &quot;FR&quot;,
-        &quot;GR&quot;,
-        &quot;GT&quot;,
-        &quot;HN&quot;,
-        &quot;HK&quot;,
-        &quot;HU&quot;,
-        &quot;IS&quot;,
-        &quot;IE&quot;,
-        &quot;IT&quot;,
-        &quot;LV&quot;,
-        &quot;LT&quot;,
-        &quot;LU&quot;,
-        &quot;MY&quot;,
-        &quot;MT&quot;,
-        &quot;MX&quot;,
-        &quot;NL&quot;,
-        &quot;NZ&quot;,
-        &quot;NI&quot;,
-        &quot;NO&quot;,
-        &quot;PA&quot;,
-        &quot;PY&quot;,
-        &quot;PE&quot;,
-        &quot;PH&quot;,
-        &quot;PL&quot;,
-        &quot;PT&quot;,
-        &quot;SG&quot;,
-        &quot;SK&quot;,
-        &quot;ES&quot;,
-        &quot;SE&quot;,
-        &quot;CH&quot;,
-        &quot;TW&quot;,
-        &quot;TR&quot;,
-        &quot;UY&quot;,
-        &quot;US&quot;,
-        &quot;GB&quot;,
-        &quot;AD&quot;,
-        &quot;LI&quot;,
-        &quot;MC&quot;,
-        &quot;ID&quot;,
-        &quot;JP&quot;,
-        &quot;TH&quot;,
-        &quot;VN&quot;,
-        &quot;RO&quot;,
-        &quot;IL&quot;,
-        &quot;ZA&quot;,
-        &quot;SA&quot;,
-        &quot;AE&quot;,
-        &quot;BH&quot;,
-        &quot;QA&quot;,
-        &quot;OM&quot;,
-        &quot;KW&quot;,
-        &quot;EG&quot;,
-        &quot;MA&quot;,
-        &quot;DZ&quot;,
-        &quot;TN&quot;,
-        &quot;LB&quot;,
-        &quot;JO&quot;,
-        &quot;PS&quot;,
-        &quot;IN&quot;,
-        &quot;BY&quot;,
-        &quot;KZ&quot;,
-        &quot;MD&quot;,
-        &quot;UA&quot;,
-        &quot;AL&quot;,
-        &quot;BA&quot;,
-        &quot;HR&quot;,
-        &quot;ME&quot;,
-        &quot;MK&quot;,
-        &quot;RS&quot;,
-        &quot;SI&quot;,
-        &quot;KR&quot;,
-        &quot;BD&quot;,
-        &quot;PK&quot;,
-        &quot;LK&quot;,
-        &quot;GH&quot;,
-        &quot;KE&quot;,
-        &quot;NG&quot;,
-        &quot;TZ&quot;,
-        &quot;UG&quot;,
-        &quot;AG&quot;,
-        &quot;AM&quot;,
-        &quot;BS&quot;,
-        &quot;BB&quot;,
-        &quot;BZ&quot;,
-        &quot;BT&quot;,
-        &quot;BW&quot;,
-        &quot;BF&quot;,
-        &quot;CV&quot;,
-        &quot;CW&quot;,
-        &quot;DM&quot;,
-        &quot;FJ&quot;,
-        &quot;GM&quot;,
-        &quot;GE&quot;,
-        &quot;GD&quot;,
-        &quot;GW&quot;,
-        &quot;GY&quot;,
-        &quot;HT&quot;,
-        &quot;JM&quot;,
-        &quot;KI&quot;,
-        &quot;LS&quot;,
-        &quot;LR&quot;,
-        &quot;MW&quot;,
-        &quot;MV&quot;,
-        &quot;ML&quot;,
-        &quot;MH&quot;,
-        &quot;FM&quot;,
-        &quot;NA&quot;,
-        &quot;NR&quot;,
-        &quot;NE&quot;,
-        &quot;PW&quot;,
-        &quot;PG&quot;,
-        &quot;WS&quot;,
-        &quot;SM&quot;,
-        &quot;ST&quot;,
-        &quot;SN&quot;,
-        &quot;SC&quot;,
-        &quot;SL&quot;,
-        &quot;SB&quot;,
-        &quot;KN&quot;,
-        &quot;LC&quot;,
-        &quot;VC&quot;,
-        &quot;SR&quot;,
-        &quot;TL&quot;,
-        &quot;TO&quot;,
-        &quot;TT&quot;,
-        &quot;TV&quot;,
-        &quot;VU&quot;,
-        &quot;AZ&quot;,
-        &quot;BN&quot;,
-        &quot;BI&quot;,
-        &quot;KH&quot;,
-        &quot;CM&quot;,
-        &quot;TD&quot;,
-        &quot;KM&quot;,
-        &quot;GQ&quot;,
-        &quot;SZ&quot;,
-        &quot;GA&quot;,
-        &quot;GN&quot;,
-        &quot;KG&quot;,
-        &quot;LA&quot;,
-        &quot;MO&quot;,
-        &quot;MR&quot;,
-        &quot;MN&quot;,
-        &quot;NP&quot;,
-        &quot;RW&quot;,
-        &quot;TG&quot;,
-        &quot;UZ&quot;,
-        &quot;ZW&quot;,
-        &quot;BJ&quot;,
-        &quot;MG&quot;,
-        &quot;MU&quot;,
-        &quot;MZ&quot;,
-        &quot;AO&quot;,
-        &quot;CI&quot;,
-        &quot;DJ&quot;,
-        &quot;ZM&quot;,
-        &quot;CD&quot;,
-        &quot;CG&quot;,
-        &quot;IQ&quot;,
-        &quot;LY&quot;,
-        &quot;TJ&quot;,
-        &quot;VE&quot;,
-        &quot;ET&quot;,
-        &quot;XK&quot;
-      ],
-      &quot;disc_number&quot;: 1,
-      &quot;duration_ms&quot;: 304840,
-      &quot;explicit&quot;: false,
-      &quot;external_ids&quot;: {
-        &quot;isrc&quot;: &quot;GBAHT0900320&quot;
-      },
-      &quot;external_urls&quot;: {
-        &quot;spotify&quot;: &quot;https://open.spotify.com/track/4VqPOruhp5EdPBeR92t6lQ&quot;
-      },
-      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/4VqPOruhp5EdPBeR92t6lQ&quot;,
-      &quot;id&quot;: &quot;4VqPOruhp5EdPBeR92t6lQ&quot;,
-      &quot;is_local&quot;: false,
-      &quot;name&quot;: &quot;Uprising&quot;,
-      &quot;popularity&quot;: 74,
-      &quot;preview_url&quot;: null,
-      &quot;track_number&quot;: 1,
-      &quot;type&quot;: &quot;track&quot;,
-      &quot;uri&quot;: &quot;spotify:track:4VqPOruhp5EdPBeR92t6lQ&quot;
-    },
-    {
-      &quot;album&quot;: {
-        &quot;album_type&quot;: &quot;album&quot;,
-        &quot;artists&quot;: [
-          {
-            &quot;external_urls&quot;: {
-              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-            },
-            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;name&quot;: &quot;Muse&quot;,
-            &quot;type&quot;: &quot;artist&quot;,
-            &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-          }
-        ],
-        &quot;available_markets&quot;: [
-        ],
-        &quot;external_urls&quot;: {
-          &quot;spotify&quot;: &quot;https://open.spotify.com/album/0HcHPBu9aaF1MxOiZmUQTl&quot;
-        },
-        &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl&quot;,
-        &quot;id&quot;: &quot;0HcHPBu9aaF1MxOiZmUQTl&quot;,
-        &quot;images&quot;: [
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2738cb690f962092fd44bbe2bf4&quot;,
-            &quot;width&quot;: 640,
-            &quot;height&quot;: 640
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e028cb690f962092fd44bbe2bf4&quot;,
-            &quot;width&quot;: 300,
-            &quot;height&quot;: 300
-          },
-          {
-            &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048518cb690f962092fd44bbe2bf4&quot;,
-            &quot;width&quot;: 64,
-            &quot;height&quot;: 64
-          }
-        ],
-        &quot;name&quot;: &quot;Absolution&quot;,
-        &quot;release_date&quot;: &quot;2004-03-23&quot;,
-        &quot;release_date_precision&quot;: &quot;day&quot;,
-        &quot;total_tracks&quot;: 15,
-        &quot;type&quot;: &quot;album&quot;,
-        &quot;uri&quot;: &quot;spotify:album:0HcHPBu9aaF1MxOiZmUQTl&quot;
-      },
-      &quot;artists&quot;: [
-        {
-          &quot;external_urls&quot;: {
-            &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-          },
-          &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-          &quot;name&quot;: &quot;Muse&quot;,
-          &quot;type&quot;: &quot;artist&quot;,
-          &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-        }
-      ],
-      &quot;available_markets&quot;: [
-      ],
-      &quot;disc_number&quot;: 1,
-      &quot;duration_ms&quot;: 237039,
-      &quot;explicit&quot;: false,
-      &quot;external_ids&quot;: {
-        &quot;isrc&quot;: &quot;GBCVT0300078&quot;
-      },
-      &quot;external_urls&quot;: {
-        &quot;spotify&quot;: &quot;https://open.spotify.com/track/2takcwOaAZWiXQijPHIx7B&quot;
-      },
-      &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B&quot;,
-      &quot;id&quot;: &quot;2takcwOaAZWiXQijPHIx7B&quot;,
-      &quot;is_local&quot;: false,
-      &quot;name&quot;: &quot;Time is Running Out&quot;,
-      &quot;popularity&quot;: 5,
-      &quot;preview_url&quot;: null,
-      &quot;track_number&quot;: 3,
-      &quot;type&quot;: &quot;track&quot;,
-      &quot;uri&quot;: &quot;spotify:track:2takcwOaAZWiXQijPHIx7B&quot;
-    }
-  ]
-}
- 
-</div>   
+     
 
   
 
@@ -1541,8 +507,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>315</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>288</span>
             </div>
           </div>
           <div class="step-row">
@@ -1621,7 +587,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">314</div>
+    <div class="time-cell passed">287</div>
   </div>
 
    
@@ -1630,34 +596,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">15:54:07.440 request:
+  <div class="preformatted" data-parent="0.20">07:37:43.927 request:
 1 &gt; GET https://api.spotify.com/v1/me/tracks
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:07.753 response time in milliseconds: 312
-1 &lt; 200
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; cache-control: private, max-age=0
-1 &lt; etag: &quot;MC-IjJlMWU5MjUyZjc1YTUxOWMwZjBjNzU4YmQ2MTkxNWU1Ig==&quot;
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:44.213 response time in milliseconds: 286
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:07 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:46 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-{&quot;href&quot;:&quot;https://api.spotify.com/v1/me/tracks?offset=0&amp;limit=20&quot;,&quot;items&quot;:[{&quot;added_at&quot;:&quot;2025-01-07T10:23:10Z&quot;,&quot;track&quot;:{&quot;album&quot;:{&quot;album_type&quot;:&quot;album&quot;,&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[],&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/album/0HcHPBu9aaF1MxOiZmUQTl&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl&quot;,&quot;id&quot;:&quot;0HcHPBu9aaF1MxOiZmUQTl&quot;,&quot;images&quot;:[{&quot;height&quot;:640,&quot;width&quot;:640,&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d0000b2738cb690f962092fd44bbe2bf4&quot;},{&quot;height&quot;:300,&quot;width&quot;:300,&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d00001e028cb690f962092fd44bbe2bf4&quot;},{&quot;height&quot;:64,&quot;width&quot;:64,&quot;url&quot;:&quot;https://i.scdn.co/image/ab67616d000048518cb690f962092fd44bbe2bf4&quot;}],&quot;is_playable&quot;:true,&quot;name&quot;:&quot;Absolution&quot;,&quot;release_date&quot;:&quot;2004-03-23&quot;,&quot;release_date_precision&quot;:&quot;day&quot;,&quot;total_tracks&quot;:15,&quot;type&quot;:&quot;album&quot;,&quot;uri&quot;:&quot;spotify:album:0HcHPBu9aaF1MxOiZmUQTl&quot;},&quot;artists&quot;:[{&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,&quot;id&quot;:&quot;12Chz98pHFMPJEknJQMWvI&quot;,&quot;name&quot;:&quot;Muse&quot;,&quot;type&quot;:&quot;artist&quot;,&quot;uri&quot;:&quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;}],&quot;available_markets&quot;:[],&quot;disc_number&quot;:1,&quot;duration_ms&quot;:237039,&quot;explicit&quot;:false,&quot;external_ids&quot;:{&quot;isrc&quot;:&quot;GBCVT0300078&quot;},&quot;external_urls&quot;:{&quot;spotify&quot;:&quot;https://open.spotify.com/track/2takcwOaAZWiXQijPHIx7B&quot;},&quot;href&quot;:&quot;https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B&quot;,&quot;id&quot;:&quot;2takcwOaAZWiXQijPHIx7B&quot;,&quot;is_local&quot;:false,&quot;is_playable&quot;:true,&quot;name&quot;:&quot;Time is Running Out&quot;,&quot;popularity&quot;:5,&quot;preview_url&quot;:null,&quot;track_number&quot;:3,&quot;type&quot;:&quot;track&quot;,&quot;uri&quot;:&quot;spotify:track:2takcwOaAZWiXQijPHIx7B&quot;}}],&quot;limit&quot;:20,&quot;next&quot;:null,&quot;offset&quot;:0,&quot;previous&quot;:null,&quot;total&quot;:1}
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -1672,13 +641,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.21">
-      <div class="step-ref passed">21</div>
+      <div class="step-ref failed">21</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -1687,7 +656,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.21">07:37:44.214 classpath:Spotify/Tracks.feature:21
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 286, url: https://api.spotify.com/v1/me/tracks, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:21
+</div>   
 
   
 
@@ -1700,13 +679,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.22">
-      <div class="step-ref passed">22</div>
+      <div class="step-ref skipped">22</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -1715,102 +694,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.22">15:54:07.754 [print] {
-  &quot;href&quot;: &quot;https://api.spotify.com/v1/me/tracks?offset=0&amp;limit=20&quot;,
-  &quot;items&quot;: [
-    {
-      &quot;added_at&quot;: &quot;2025-01-07T10:23:10Z&quot;,
-      &quot;track&quot;: {
-        &quot;album&quot;: {
-          &quot;album_type&quot;: &quot;album&quot;,
-          &quot;artists&quot;: [
-            {
-              &quot;external_urls&quot;: {
-                &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-              },
-              &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-              &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-              &quot;name&quot;: &quot;Muse&quot;,
-              &quot;type&quot;: &quot;artist&quot;,
-              &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-            }
-          ],
-          &quot;available_markets&quot;: [
-          ],
-          &quot;external_urls&quot;: {
-            &quot;spotify&quot;: &quot;https://open.spotify.com/album/0HcHPBu9aaF1MxOiZmUQTl&quot;
-          },
-          &quot;href&quot;: &quot;https://api.spotify.com/v1/albums/0HcHPBu9aaF1MxOiZmUQTl&quot;,
-          &quot;id&quot;: &quot;0HcHPBu9aaF1MxOiZmUQTl&quot;,
-          &quot;images&quot;: [
-            {
-              &quot;height&quot;: 640,
-              &quot;width&quot;: 640,
-              &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d0000b2738cb690f962092fd44bbe2bf4&quot;
-            },
-            {
-              &quot;height&quot;: 300,
-              &quot;width&quot;: 300,
-              &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d00001e028cb690f962092fd44bbe2bf4&quot;
-            },
-            {
-              &quot;height&quot;: 64,
-              &quot;width&quot;: 64,
-              &quot;url&quot;: &quot;https://i.scdn.co/image/ab67616d000048518cb690f962092fd44bbe2bf4&quot;
-            }
-          ],
-          &quot;is_playable&quot;: true,
-          &quot;name&quot;: &quot;Absolution&quot;,
-          &quot;release_date&quot;: &quot;2004-03-23&quot;,
-          &quot;release_date_precision&quot;: &quot;day&quot;,
-          &quot;total_tracks&quot;: 15,
-          &quot;type&quot;: &quot;album&quot;,
-          &quot;uri&quot;: &quot;spotify:album:0HcHPBu9aaF1MxOiZmUQTl&quot;
-        },
-        &quot;artists&quot;: [
-          {
-            &quot;external_urls&quot;: {
-              &quot;spotify&quot;: &quot;https://open.spotify.com/artist/12Chz98pHFMPJEknJQMWvI&quot;
-            },
-            &quot;href&quot;: &quot;https://api.spotify.com/v1/artists/12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;id&quot;: &quot;12Chz98pHFMPJEknJQMWvI&quot;,
-            &quot;name&quot;: &quot;Muse&quot;,
-            &quot;type&quot;: &quot;artist&quot;,
-            &quot;uri&quot;: &quot;spotify:artist:12Chz98pHFMPJEknJQMWvI&quot;
-          }
-        ],
-        &quot;available_markets&quot;: [
-        ],
-        &quot;disc_number&quot;: 1,
-        &quot;duration_ms&quot;: 237039,
-        &quot;explicit&quot;: false,
-        &quot;external_ids&quot;: {
-          &quot;isrc&quot;: &quot;GBCVT0300078&quot;
-        },
-        &quot;external_urls&quot;: {
-          &quot;spotify&quot;: &quot;https://open.spotify.com/track/2takcwOaAZWiXQijPHIx7B&quot;
-        },
-        &quot;href&quot;: &quot;https://api.spotify.com/v1/tracks/2takcwOaAZWiXQijPHIx7B&quot;,
-        &quot;id&quot;: &quot;2takcwOaAZWiXQijPHIx7B&quot;,
-        &quot;is_local&quot;: false,
-        &quot;is_playable&quot;: true,
-        &quot;name&quot;: &quot;Time is Running Out&quot;,
-        &quot;popularity&quot;: 5,
-        &quot;preview_url&quot;: null,
-        &quot;track_number&quot;: 3,
-        &quot;type&quot;: &quot;track&quot;,
-        &quot;uri&quot;: &quot;spotify:track:2takcwOaAZWiXQijPHIx7B&quot;
-      }
-    }
-  ],
-  &quot;limit&quot;: 20,
-  &quot;next&quot;: null,
-  &quot;offset&quot;: 0,
-  &quot;previous&quot;: null,
-  &quot;total&quot;: 1
-}
- 
-</div>   
+     
 
   
 
@@ -1829,8 +713,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>227</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>285</span>
             </div>
           </div>
           <div class="step-row">
@@ -1937,7 +821,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method PUT</span>
       </div>
     </div>
-    <div class="time-cell passed">226</div>
+    <div class="time-cell passed">285</div>
   </div>
 
    
@@ -1946,9 +830,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.27">15:54:07.760 request:
+  <div class="preformatted" data-parent="0.27">07:37:44.221 request:
 1 &gt; PUT https://api.spotify.com/v1/me/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 2
 1 &gt; Host: api.spotify.com
@@ -1957,23 +841,28 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &gt; Accept-Encoding: gzip,deflate
 {}
 
-15:54:07.985 response time in milliseconds: 224
-1 &lt; 200
-1 &lt; cache-control: private, max-age=0
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:44.504 response time in milliseconds: 282
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
-1 &lt; Content-Length: 0
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:07 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:46 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
-
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -1988,13 +877,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.28">
-      <div class="step-ref passed">28</div>
+      <div class="step-ref failed">28</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -2003,7 +892,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.28">07:37:44.505 classpath:Spotify/Tracks.feature:28
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 282, url: https://api.spotify.com/v1/me/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:28
+</div>   
 
   
 
@@ -2016,13 +915,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.29">
-      <div class="step-ref passed">29</div>
+      <div class="step-ref skipped">29</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2031,8 +930,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.29">15:54:07.986 [print]  
-</div>   
+     
 
   
 
@@ -2051,8 +949,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>249</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>306</span>
             </div>
           </div>
           <div class="step-row">
@@ -2131,7 +1029,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method DELETE</span>
       </div>
     </div>
-    <div class="time-cell passed">248</div>
+    <div class="time-cell passed">306</div>
   </div>
 
    
@@ -2140,32 +1038,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.33">15:54:07.991 request:
+  <div class="preformatted" data-parent="0.33">07:37:44.510 request:
 1 &gt; DELETE https://api.spotify.com/v1/me/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:08.238 response time in milliseconds: 246
-1 &lt; 200
-1 &lt; cache-control: private, max-age=0
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:44.815 response time in milliseconds: 303
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
-1 &lt; Content-Length: 0
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:08 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:46 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
-
+1 &lt; Transfer-Encoding: chunked
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -2180,13 +1083,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+      <div class="step-ref failed">34</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -2195,7 +1098,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.34">07:37:44.815 classpath:Spotify/Tracks.feature:34
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 303, url: https://api.spotify.com/v1/me/tracks?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:34
+</div>   
 
   
 
@@ -2208,13 +1121,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
+      <div class="step-ref skipped">35</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2223,8 +1136,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.35">15:54:08.239 [print]  
-</div>   
+     
 
   
 
@@ -2243,8 +1155,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>255</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>300</span>
             </div>
           </div>
           <div class="step-row">
@@ -2323,7 +1235,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">254</div>
+    <div class="time-cell passed">299</div>
   </div>
 
    
@@ -2332,35 +1244,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.39">15:54:08.245 request:
+  <div class="preformatted" data-parent="0.39">07:37:44.822 request:
 1 &gt; GET https://api.spotify.com/v1/me/tracks/contains?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:08.498 response time in milliseconds: 252
-1 &lt; 200
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; cache-control: private, max-age=0
-1 &lt; etag: &quot;MC-ImJmZWI0NDIzNjNkNGY2YTJjNDEyMTcxNDRiNWM0YzE3Ig==&quot;
-1 &lt; vary: Authorization
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:45.119 response time in milliseconds: 296
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:08 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:46 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-[false,false,true]
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -2375,13 +1289,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.40">
-      <div class="step-ref passed">40</div>
+      <div class="step-ref failed">40</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -2390,7 +1304,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.40">07:37:45.120 classpath:Spotify/Tracks.feature:40
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 296, url: https://api.spotify.com/v1/me/tracks/contains?ids=7ouMYWpwJ422jRcDASZB7P%2C4VqPOruhp5EdPBeR92t6lQ%2C2takcwOaAZWiXQijPHIx7B, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Tracks.feature:40
+</div>   
 
   
 
@@ -2403,13 +1327,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.41">
-      <div class="step-ref passed">41</div>
+      <div class="step-ref skipped">41</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -2418,13 +1342,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.41">15:54:08.499 [print] [
-  false,
-  false,
-  true
-]
- 
-</div>   
+     
 
   
 

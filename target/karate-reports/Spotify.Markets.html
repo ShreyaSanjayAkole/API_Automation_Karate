@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">1</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,12 +49,12 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-01-07 03:54:03 pm</div>
+    <div>2025-01-08 07:37:40 am</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[1:6]"><span>[1:6]</span> <span>Get Available Markets</span></a>
           </div>
         </div>
@@ -80,8 +80,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>207</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>289</span>
             </div>
           </div>
           <div class="step-row">
@@ -160,7 +160,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method GET</span>
       </div>
     </div>
-    <div class="time-cell passed">206</div>
+    <div class="time-cell passed">289</div>
   </div>
 
    
@@ -169,34 +169,37 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.8">15:54:02.815 request:
+  <div class="preformatted" data-parent="0.8">07:37:39.733 request:
 1 &gt; GET https://api.spotify.com/v1/markets
-1 &gt; Authorization: Bearer BQBj1uRj_JEnF1pQvRzHOOkbsEI1H0zhJWSY6Mv1Jz6WXhwDpjW2mgIRHeBb3QSyxut81w3EHLiQ1lh9c9QBY2cMaFOgkSfGEbt4dIzABajCuH-B5C03jvwORmodrjiexBn71riPUdAiJxwGCzl8xfys7s6nQnpF0JELBHNO_p8Unn5Vr2wDZenHb68yBxrB5l2ZN5nZqh4ivEMw8IpoLxwfWnn_KqmVXmSLDl-oVbdxEY2esLjBxFL4Bst6Nj_1IItv-PeN55fNpMujnySB3evpxHBzWbKwMmVI0O9fQf89sEBv9paDMTTncWsgdQETkkGk53hXXzGw9SEJIIfG
+1 &gt; Authorization: Bearer BQBm45X-gelTmWeRxuEMX8jdBVzh-teSBoh4hGlzXifpLYnbWbHw7ZjycOatXZcQNZ3ZH8OY13HEB_6Chdn3_Gy0U8qYvPIKGppGKJzoLy5970RKL0Au_LBm7TL6fFfmQtJI9HmhGtDPAWHKS7biLEOCTuwMWa1iUdLQeJK0ihTOsXggkPXB6qg_QOmDpcD4-1al9u1BGjlhc0hfqbEyxOik249jBlXsilVdPUhF_3VWoqVc6quvHJY4XiXJUNwoR1577x8eUtLilAU8qgVXebiu8SrJaB0miunUgCVP3logSNtii99ggQo8o8UieT-WS2KHQ17HXUoP0baI9os2
 1 &gt; Host: api.spotify.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/17.0.10)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-15:54:03.020 response time in milliseconds: 204
-1 &lt; 200
-1 &lt; content-type: application/json; charset=utf-8
-1 &lt; cache-control: public, max-age=0
-1 &lt; etag: &quot;MC-IjdjZGViMWFiOWVlNzgzNWEwMWRlZGUzNjFmMDNjOGUwIg==&quot;
-1 &lt; x-robots-tag: noindex, nofollow
+07:37:40.020 response time in milliseconds: 286
+1 &lt; 401
+1 &lt; www-authenticate: Bearer realm=&quot;spotify&quot;, error=&quot;invalid_token&quot;, error_description=&quot;The access token expired&quot;
 1 &lt; access-control-allow-origin: *
 1 &lt; access-control-allow-headers: Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version, X-Cloud-Trace-Context, client-token, content-access-token
 1 &lt; access-control-allow-methods: GET, POST, OPTIONS, PUT, DELETE, PATCH
 1 &lt; access-control-allow-credentials: true
 1 &lt; access-control-max-age: 604800
+1 &lt; content-type: application/json
 1 &lt; strict-transport-security: max-age=31536000
 1 &lt; x-content-type-options: nosniff
-1 &lt; date: Tue, 07 Jan 2025 10:24:02 GMT
+1 &lt; date: Wed, 08 Jan 2025 02:07:41 GMT
 1 &lt; server: envoy
 1 &lt; Via: HTTP/2 edgeproxy, 1.1 google
 1 &lt; Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 1 &lt; Transfer-Encoding: chunked
-{&quot;markets&quot;:[&quot;AD&quot;,&quot;AE&quot;,&quot;AG&quot;,&quot;AL&quot;,&quot;AM&quot;,&quot;AO&quot;,&quot;AR&quot;,&quot;AT&quot;,&quot;AU&quot;,&quot;AZ&quot;,&quot;BA&quot;,&quot;BB&quot;,&quot;BD&quot;,&quot;BE&quot;,&quot;BF&quot;,&quot;BG&quot;,&quot;BH&quot;,&quot;BI&quot;,&quot;BJ&quot;,&quot;BN&quot;,&quot;BO&quot;,&quot;BR&quot;,&quot;BS&quot;,&quot;BT&quot;,&quot;BW&quot;,&quot;BY&quot;,&quot;BZ&quot;,&quot;CA&quot;,&quot;CD&quot;,&quot;CG&quot;,&quot;CH&quot;,&quot;CI&quot;,&quot;CL&quot;,&quot;CM&quot;,&quot;CO&quot;,&quot;CR&quot;,&quot;CV&quot;,&quot;CW&quot;,&quot;CY&quot;,&quot;CZ&quot;,&quot;DE&quot;,&quot;DJ&quot;,&quot;DK&quot;,&quot;DM&quot;,&quot;DO&quot;,&quot;DZ&quot;,&quot;EC&quot;,&quot;EE&quot;,&quot;EG&quot;,&quot;ES&quot;,&quot;ET&quot;,&quot;FI&quot;,&quot;FJ&quot;,&quot;FM&quot;,&quot;FR&quot;,&quot;GA&quot;,&quot;GB&quot;,&quot;GD&quot;,&quot;GE&quot;,&quot;GH&quot;,&quot;GM&quot;,&quot;GN&quot;,&quot;GQ&quot;,&quot;GR&quot;,&quot;GT&quot;,&quot;GW&quot;,&quot;GY&quot;,&quot;HK&quot;,&quot;HN&quot;,&quot;HR&quot;,&quot;HT&quot;,&quot;HU&quot;,&quot;ID&quot;,&quot;IE&quot;,&quot;IL&quot;,&quot;IN&quot;,&quot;IQ&quot;,&quot;IS&quot;,&quot;IT&quot;,&quot;JM&quot;,&quot;JO&quot;,&quot;JP&quot;,&quot;KE&quot;,&quot;KG&quot;,&quot;KH&quot;,&quot;KI&quot;,&quot;KM&quot;,&quot;KN&quot;,&quot;KR&quot;,&quot;KW&quot;,&quot;KZ&quot;,&quot;LA&quot;,&quot;LB&quot;,&quot;LC&quot;,&quot;LI&quot;,&quot;LK&quot;,&quot;LR&quot;,&quot;LS&quot;,&quot;LT&quot;,&quot;LU&quot;,&quot;LV&quot;,&quot;LY&quot;,&quot;MA&quot;,&quot;MC&quot;,&quot;MD&quot;,&quot;ME&quot;,&quot;MG&quot;,&quot;MH&quot;,&quot;MK&quot;,&quot;ML&quot;,&quot;MN&quot;,&quot;MO&quot;,&quot;MR&quot;,&quot;MT&quot;,&quot;MU&quot;,&quot;MV&quot;,&quot;MW&quot;,&quot;MX&quot;,&quot;MY&quot;,&quot;MZ&quot;,&quot;NA&quot;,&quot;NE&quot;,&quot;NG&quot;,&quot;NI&quot;,&quot;NL&quot;,&quot;NO&quot;,&quot;NP&quot;,&quot;NR&quot;,&quot;NZ&quot;,&quot;OM&quot;,&quot;PA&quot;,&quot;PE&quot;,&quot;PG&quot;,&quot;PH&quot;,&quot;PK&quot;,&quot;PL&quot;,&quot;PR&quot;,&quot;PS&quot;,&quot;PT&quot;,&quot;PW&quot;,&quot;PY&quot;,&quot;QA&quot;,&quot;RO&quot;,&quot;RS&quot;,&quot;RW&quot;,&quot;SA&quot;,&quot;SB&quot;,&quot;SC&quot;,&quot;SE&quot;,&quot;SG&quot;,&quot;SI&quot;,&quot;SK&quot;,&quot;SL&quot;,&quot;SM&quot;,&quot;SN&quot;,&quot;SR&quot;,&quot;ST&quot;,&quot;SV&quot;,&quot;SZ&quot;,&quot;TD&quot;,&quot;TG&quot;,&quot;TH&quot;,&quot;TJ&quot;,&quot;TL&quot;,&quot;TN&quot;,&quot;TO&quot;,&quot;TR&quot;,&quot;TT&quot;,&quot;TV&quot;,&quot;TW&quot;,&quot;TZ&quot;,&quot;UA&quot;,&quot;UG&quot;,&quot;US&quot;,&quot;UY&quot;,&quot;UZ&quot;,&quot;VC&quot;,&quot;VE&quot;,&quot;VN&quot;,&quot;VU&quot;,&quot;WS&quot;,&quot;XK&quot;,&quot;ZA&quot;,&quot;ZM&quot;,&quot;ZW&quot;]}
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
 
 </div>   
 
@@ -211,13 +214,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.9">
-      <div class="step-ref passed">9</div>
+      <div class="step-ref failed">9</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell failed">
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell failed">0</div>
   </div>
 
    
@@ -226,7 +229,17 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
+  <div class="preformatted" data-parent="0.9">07:37:40.021 classpath:Spotify/Markets.feature:9
+Then status 200
+status code was: 401, expected: 200, response time in milliseconds: 286, url: https://api.spotify.com/v1/markets, response: 
+{
+  &quot;error&quot;: {
+    &quot;status&quot;: 401,
+    &quot;message&quot;: &quot;The access token expired&quot;
+  }
+}
+classpath:Spotify/Markets.feature:9
+</div>   
 
   
 
@@ -239,13 +252,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.10">
-      <div class="step-ref passed">10</div>
+      <div class="step-ref skipped">10</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -254,197 +267,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">15:54:03.020 [print] {
-  &quot;markets&quot;: [
-    &quot;AD&quot;,
-    &quot;AE&quot;,
-    &quot;AG&quot;,
-    &quot;AL&quot;,
-    &quot;AM&quot;,
-    &quot;AO&quot;,
-    &quot;AR&quot;,
-    &quot;AT&quot;,
-    &quot;AU&quot;,
-    &quot;AZ&quot;,
-    &quot;BA&quot;,
-    &quot;BB&quot;,
-    &quot;BD&quot;,
-    &quot;BE&quot;,
-    &quot;BF&quot;,
-    &quot;BG&quot;,
-    &quot;BH&quot;,
-    &quot;BI&quot;,
-    &quot;BJ&quot;,
-    &quot;BN&quot;,
-    &quot;BO&quot;,
-    &quot;BR&quot;,
-    &quot;BS&quot;,
-    &quot;BT&quot;,
-    &quot;BW&quot;,
-    &quot;BY&quot;,
-    &quot;BZ&quot;,
-    &quot;CA&quot;,
-    &quot;CD&quot;,
-    &quot;CG&quot;,
-    &quot;CH&quot;,
-    &quot;CI&quot;,
-    &quot;CL&quot;,
-    &quot;CM&quot;,
-    &quot;CO&quot;,
-    &quot;CR&quot;,
-    &quot;CV&quot;,
-    &quot;CW&quot;,
-    &quot;CY&quot;,
-    &quot;CZ&quot;,
-    &quot;DE&quot;,
-    &quot;DJ&quot;,
-    &quot;DK&quot;,
-    &quot;DM&quot;,
-    &quot;DO&quot;,
-    &quot;DZ&quot;,
-    &quot;EC&quot;,
-    &quot;EE&quot;,
-    &quot;EG&quot;,
-    &quot;ES&quot;,
-    &quot;ET&quot;,
-    &quot;FI&quot;,
-    &quot;FJ&quot;,
-    &quot;FM&quot;,
-    &quot;FR&quot;,
-    &quot;GA&quot;,
-    &quot;GB&quot;,
-    &quot;GD&quot;,
-    &quot;GE&quot;,
-    &quot;GH&quot;,
-    &quot;GM&quot;,
-    &quot;GN&quot;,
-    &quot;GQ&quot;,
-    &quot;GR&quot;,
-    &quot;GT&quot;,
-    &quot;GW&quot;,
-    &quot;GY&quot;,
-    &quot;HK&quot;,
-    &quot;HN&quot;,
-    &quot;HR&quot;,
-    &quot;HT&quot;,
-    &quot;HU&quot;,
-    &quot;ID&quot;,
-    &quot;IE&quot;,
-    &quot;IL&quot;,
-    &quot;IN&quot;,
-    &quot;IQ&quot;,
-    &quot;IS&quot;,
-    &quot;IT&quot;,
-    &quot;JM&quot;,
-    &quot;JO&quot;,
-    &quot;JP&quot;,
-    &quot;KE&quot;,
-    &quot;KG&quot;,
-    &quot;KH&quot;,
-    &quot;KI&quot;,
-    &quot;KM&quot;,
-    &quot;KN&quot;,
-    &quot;KR&quot;,
-    &quot;KW&quot;,
-    &quot;KZ&quot;,
-    &quot;LA&quot;,
-    &quot;LB&quot;,
-    &quot;LC&quot;,
-    &quot;LI&quot;,
-    &quot;LK&quot;,
-    &quot;LR&quot;,
-    &quot;LS&quot;,
-    &quot;LT&quot;,
-    &quot;LU&quot;,
-    &quot;LV&quot;,
-    &quot;LY&quot;,
-    &quot;MA&quot;,
-    &quot;MC&quot;,
-    &quot;MD&quot;,
-    &quot;ME&quot;,
-    &quot;MG&quot;,
-    &quot;MH&quot;,
-    &quot;MK&quot;,
-    &quot;ML&quot;,
-    &quot;MN&quot;,
-    &quot;MO&quot;,
-    &quot;MR&quot;,
-    &quot;MT&quot;,
-    &quot;MU&quot;,
-    &quot;MV&quot;,
-    &quot;MW&quot;,
-    &quot;MX&quot;,
-    &quot;MY&quot;,
-    &quot;MZ&quot;,
-    &quot;NA&quot;,
-    &quot;NE&quot;,
-    &quot;NG&quot;,
-    &quot;NI&quot;,
-    &quot;NL&quot;,
-    &quot;NO&quot;,
-    &quot;NP&quot;,
-    &quot;NR&quot;,
-    &quot;NZ&quot;,
-    &quot;OM&quot;,
-    &quot;PA&quot;,
-    &quot;PE&quot;,
-    &quot;PG&quot;,
-    &quot;PH&quot;,
-    &quot;PK&quot;,
-    &quot;PL&quot;,
-    &quot;PR&quot;,
-    &quot;PS&quot;,
-    &quot;PT&quot;,
-    &quot;PW&quot;,
-    &quot;PY&quot;,
-    &quot;QA&quot;,
-    &quot;RO&quot;,
-    &quot;RS&quot;,
-    &quot;RW&quot;,
-    &quot;SA&quot;,
-    &quot;SB&quot;,
-    &quot;SC&quot;,
-    &quot;SE&quot;,
-    &quot;SG&quot;,
-    &quot;SI&quot;,
-    &quot;SK&quot;,
-    &quot;SL&quot;,
-    &quot;SM&quot;,
-    &quot;SN&quot;,
-    &quot;SR&quot;,
-    &quot;ST&quot;,
-    &quot;SV&quot;,
-    &quot;SZ&quot;,
-    &quot;TD&quot;,
-    &quot;TG&quot;,
-    &quot;TH&quot;,
-    &quot;TJ&quot;,
-    &quot;TL&quot;,
-    &quot;TN&quot;,
-    &quot;TO&quot;,
-    &quot;TR&quot;,
-    &quot;TT&quot;,
-    &quot;TV&quot;,
-    &quot;TW&quot;,
-    &quot;TZ&quot;,
-    &quot;UA&quot;,
-    &quot;UG&quot;,
-    &quot;US&quot;,
-    &quot;UY&quot;,
-    &quot;UZ&quot;,
-    &quot;VC&quot;,
-    &quot;VE&quot;,
-    &quot;VN&quot;,
-    &quot;VU&quot;,
-    &quot;WS&quot;,
-    &quot;XK&quot;,
-    &quot;ZA&quot;,
-    &quot;ZM&quot;,
-    &quot;ZW&quot;
-  ]
-}
- 
-</div>   
+     
 
   
 
