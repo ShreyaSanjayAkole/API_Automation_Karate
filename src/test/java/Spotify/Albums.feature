@@ -22,19 +22,19 @@ Feature: Spotify Albums
     Then status 200
     And print response
 
-  Scenario: Get User's Saved Albums
+  Scenario: Get User Saved Albums
     Given url 'https://api.spotify.com/v1/me/albums'
     When method GET
     Then status 200
     And print response
 
   Scenario: Save Albums for Current User
-    Given url 'https://api.spotify.com/v1/me/albums?ids=382ObEPsp2rxGrnsizN5TX,1A2GTWGtFfWp7KSQTwWOyo,2noRn2Aes5aoNVsU6iWThc'
-    And request {}
+    Given url 'https://api.spotify.com/v1/me/albums'
+    And param ids = read('Albums.json').ids.join(',')
+    And request { "ids": ids }
     When method PUT
     Then status 200
     And print response
-
 
   Scenario: Remove Users' Saved Albums
     Given url 'https://api.spotify.com/v1/me/albums'
